@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 开始 头部文件,这里我采用了一直以来个人比较喜欢的bootstrap模板(metro)-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>新闻后台管理</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- 引入bootstrap样式表 -->
+    <link href="admin/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="admin/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <link href="admin/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="admin/css/style-metro.css" rel="stylesheet" type="text/css" />
+    <link href="admin/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="admin/css/style-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="admin/css/default.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="admin/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <!--引入自定义样式表-->
+    <!-- <link rel="stylesheet" href="css/Main.css"> -->
+</head>
+<!-- 结束 头部文件-->
+<!-- 开始 主体Body部分 -->
+
+<body class="page-header-fixed">
+    <!-- 开始头部导航部分这里只显示一个公司logo以及一个右侧个人管理菜单 -->
+    <div class="header navbar navbar-inverse navbar-fixed-top">
+        <!-- 左侧logo -->
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <!-- LOGO -->
+                <a class="brand" href="#" id="c_logo">
+                    新闻管理系统
+                </a>
+                <!-- END LOGO -->
+                <!-- 响应式菜单导航按纽 -->
+                <a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+                    <img src="admin/image/menu-toggler.png" alt="" />
+                </a>
+                <!-- 结束响应式菜单导航按纽 -->
+                <!-- 顶部右侧个人信息管理菜单 -->
+                <ul class="nav pull-right">
+                    <!-- 用户退出/个人管理菜单 -->
+                    <li class="dropdown user">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img alt="" src="admin/image/avatar1_small.jpg">
+                            <span class="username">管理员</span>
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="icon-user"></i> 个人资料</a></li>
+                            <li><a href="#"><i class="icon-envelope"></i> 我的信息</a></li>
+                            <li><a href="login.html"><i class="icon-key"></i> 退出</a></li>
+                        </ul>
+                    </li>
+                    <!-- 结束用户退出/个人管理菜单 -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 结束头部导航部分-->
+    <!-- 开始主体内容部分 -->
+    <div class="page-container row-fluid">
+        <!-- 左侧菜单栏 -->
+        <div class="page-sidebar nav-collapse collapse">
+            <!-- 侧边菜单 -->
+            <ul class="page-sidebar-menu">
+                <li>
+                    <div class="sidebar-toggler hidden-phone"></div>
+                </li>
+                <li>
+                    <!-- 快速查询 FORM -->
+                    <form class="sidebar-search">
+                        <div class="input-box">
+                            <a href="javascript:;" class="remove"></a>
+                            <input type="text" placeholder="Search...">
+                            <input type="button" class="submit" value=" ">
+                        </div>
+                    </form>
+                    <!-- 结束快速查询 FORM -->
+                </li>
+                <li class="active ">
+                    <a href="#">
+                        <i class="icon-home"></i>
+                        <span class="title">新闻管理</span>
+                        <span class="selected"></span>
+                        <span class="open"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 结束左侧菜单栏 -->
+        <!-- 右侧内容部分 -->
+        <div class="page-content">
+            <!-- 开始右侧内容部分-->
+            <div class="container-fluid">
+                <!-- 右侧内容部分头部-->
+                <div class="row-fluid">
+                    <div class="span12">
+                        <!-- 根据业务需要可去除-->
+                        <h3 class="page-title">
+                            <i class="icon-home"></i>
+                            首页 <small>Portal</small>
+                        </h3>
+                    </div>
+                </div>
+                <!-- 右侧内容部分头部-->
+                <!-- 开始内容主体部分-->
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="alert alert-success">
+                            <button class="close" data-dismiss="alert"></button>
+                            这个bootstrap后台模板是我一直喜欢的，带windows风格．这个模板顶部是固定的.
+                            <br>
+                            <span class="label label-important">NOTE:</span>&nbsp;由于这期任务学到了bootstrap,且做这个作业是可以结合外部掌握的知识自由发挥，所以采用此Metro风格来完成这个作业
+                            <br/> 下面是演示了一个后台管理系统中不可缺少的表格数据显示,这个后台管理功能只完成模拟用户帐号登陆以及右上方的用户模拟注销处理
+                        </div>
+                        <!--这里展示表格一-->
+                        <div class="row-fluid">
+                            <div class="span12">
+                                <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                                <div class="portlet box blue">
+                                    <div class="portlet-title">
+                                        <div class="caption"><i class="icon-edit"></i>新闻列表</div>
+                                        <div class="tools">
+                                            <a href="javascript:;" class="collapse"></a>
+                                            <a href="javascript:;" class="reload"></a>
+                                        </div>
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="clearfix">
+                                            <div class="btn-group">
+                                                <button class="btn green" id="btnAdd"><i class="icon-plus"></i>添加新闻</button>
+                                            </div>
+                                        </div>
+                                        <div class="dataTables_wrapper form-inline" role="grid">
+                                            <table class="table table-striped table-hover" id="newstable" aria-describedby="sample_editable_1_info">
+                                                <thead>
+                                                    <tr role="row">
+                                                        <th class="sorting_disabled" style="width: 43px;">#</th>
+                                                        <th class="sorting" style="width: 120px;">新闻类型</th>
+                                                        <th class="sorting" style="width: 364px;">新闻标题</th>
+                                                        <th class="sorting" style="width: 214px;">图片URL</th>
+                                                        <th class="sorting" style="width: 116px;">来源</th>
+                                                        <th class="sorting" style="width: 160px;">时间</th>
+                                                        <th class="sorting" style="width: 161px;">操作</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all">
+                                                </tbody>
+                                            </table>
+                                            <div class="row-fluid">
+                                                <div class="span6">
+                                                    <div class="dataTables_info" id="sample_editable_1_info">Showing 1 to 5 of 6 entries</div>
+                                                </div>
+                                                <div class="span6">
+                                                    <div class="dataTables_paginate paging_bootstrap pagination">
+                                                        <ul>
+                                                            <li class="prev disabled"><a href="#">← <span class="hidden-480">Prev</span></a></li>
+                                                            <li class="active"><a href="#">1</a></li>
+                                                            <li><a href="#">2</a></li>
+                                                            <li class="next"><a href="#"><span class="hidden-480">Next</span> → </a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END EXAMPLE TABLE PORTLET-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 结束开始内容主体部分-->
+            </div>
+        </div>
+    </div>
+    <!-- 结束主体内容部分 -->
+    <!-- 添加新闻 Modal -->
+    <div id="addModal" class="modal hide fade in" tabindex="-1" data-width="760" aria-hidden="false" style=" width: 760px; margin-left: -380px; margin-top:0px;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+            <h3>添加新闻</h3>
+        </div>
+        <div class="modal-body">
+            <div class="row-fluid">
+                <form action="#" id="form_sample_1" class="form-horizontal" novalidate="novalidate">
+                    <div class="alert alert-error hide">
+                        <button class="close" data-dismiss="alert"></button>
+                        You have some form errors. Please check below.
+                    </div>
+                    <div class="alert alert-success hide">
+                        <button class="close" data-dismiss="alert"></button>
+                        Your form validation is successful!
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">标题<span class="required">*</span></label>
+                        <div class="controls">
+                            <input type="text" name="name" id="newstitle" data-required="1" class="span6 m-wrap">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">类型<span class="required">*</span></label>
+                        <div class="controls">
+                            <select class="span6 m-wrap" name="category" id="newstype">
+                                <option>精选</option>
+                                <option>百家</option>
+                                <option>本地</option>
+                                <option>图片</option>
+                                <option>娱乐</option>
+                                <option>社会</option>
+                                <option>军事</option>
+                                <option>女人</option>
+                                <option>搞笑</option>
+                                <option>互联网</option>
+                                <option>更多</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">图片URL<span class="required">*</span></label>
+                        <div class="controls">
+                            <input name="url" type="text" class="span6 m-wrap" value="../images/" id="newsimg">
+                            <span class="help-block">写图片名称即可如a.jpg/b.png</span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">时间<span class="required">*</span></label>
+                        <div class="controls">
+                            <input name="datetime" type="date" class="span6 m-wrap" id="newstime">
+                            <!-- <input name="datetime" type="text" class="span6 m-wrap" id="newstime" readonly="true"> -->
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">来源<span class="required">*</span></label>
+                        <div class="controls">
+                            <input name="digits" type="text" class="span6 m-wrap" id="newssrc">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn">取消</button>
+            <button type="button" class="btn blue" id="btnsave">保存</button>
+        </div>
+    </div>
+    <!-- /end 添加新闻 Modal -->
+
+    <!-- 编辑新闻 Modal -->
+    <div id="updateModal" class="modal hide fade in" tabindex="-1" data-width="760" aria-hidden="false" style=" width: 760px; margin-left: -380px; margin-top:0px;">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+            <h3>新闻编辑</h3>
+        </div>
+        <div class="modal-body">
+            <div class="row-fluid">
+                <form action="#" id="form_sample_2" class="form-horizontal" novalidate="novalidate">
+                    <div class="alert alert-error hide">
+                        <button class="close" data-dismiss="alert"></button>
+                        You have some form errors. Please check below.
+                    </div>
+                    <div class="alert alert-success hide">
+                        <button class="close" data-dismiss="alert"></button>
+                        Your form validation is successful!
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">标题<span class="required">*</span></label>
+                        <div class="controls">
+                            <input type="text" name="name" id="unewstitle" data-required="1" class="span6 m-wrap">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">类型<span class="required">*</span></label>
+                        <div class="controls">
+                            <select class="span6 m-wrap" name="category" id="unewstype">
+                                <option>精选</option>
+                                <option>百家</option>
+                                <option>本地</option>
+                                <option>图片</option>
+                                <option>娱乐</option>
+                                <option>社会</option>
+                                <option>军事</option>
+                                <option>女人</option>
+                                <option>搞笑</option>
+                                <option>互联网</option>
+                                <option>更多</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">图片URL<span class="required">*</span></label>
+                        <div class="controls">
+                            <input name="url" type="text" class="span6 m-wrap" value="../images/" id="unewsimg">
+                            <span class="help-block">写图片名称即可如a.jpg/b.png</span>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">时间<span class="required">*</span></label>
+                        <div class="controls">
+                            <input name="number" type="date" class="span6 m-wrap" id="unewstime">
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label class="control-label">来源<span class="required">*</span></label>
+                        <div class="controls">
+                            <input name="digits" type="text" class="span6 m-wrap" id="unewssrc">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn">取消</button>
+            <button type="button" class="btn blue" id="btnupdate">保存</button>
+        </div>
+    </div>
+    <!-- /end 编辑新闻 Modal -->
+    <div id="deleteModal" class="modal hide fade in" tabindex="-1" data-backdrop="static" data-keyboard="false" aria-hidden="false" style="margin-top: -61.5px;">
+        <div class="modal-body">
+            <p>当前新闻删除便无法恢复，是否确认要删除?</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" data-dismiss="modal" class="btn">取消</button>
+            <button type="button" data-dismiss="modal" class="btn green" id="btndelete">确认</button>
+        </div>
+    </div>
+    <!-- 加载js脚本(尽量将js的加载放在页面底部这样减少页面加载时间) -->
+    <script src="admin/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="admin/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="admin/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+    <script src="admin/js/bootstrap.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+
+    <script src="media/js/excanvas.min.js"></script>
+
+    <script src="media/js/respond.min.js"></script>  
+
+    <![endif]-->
+    <script src="admin/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="admin/js/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="admin/js/jquery.cookie.min.js" type="text/javascript"></script>
+    <script src="admin/js/jquery.uniform.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="./js/newsAdmin.js"></script>
+    <script src="admin/js/app.js"></script>
+    <script>
+    jQuery(document).ready(function() {
+
+        App.init();
+
+    });
+    </script>
+    <!-- 结束脚本 -->
+</body>
+<!-- 结束BODY部分 -->
+
+</html>
