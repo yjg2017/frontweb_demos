@@ -1,0 +1,12 @@
+[ 
+	{ 
+		"name":"admin", 
+		"pwd":"123", 
+		"email":"zhangguoli@123.com" 
+	}, 
+	{ 
+		"name":"user", 
+		"pwd":"123456", 
+		"email":"zhangtieli@123.com" 
+	}
+] 

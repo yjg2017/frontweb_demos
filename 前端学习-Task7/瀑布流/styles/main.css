@@ -1,0 +1,44 @@
+*{
+	padding:0;
+	margin: 0;
+}
+/*设置承载图片的容器样式，默认1200宽度左右两端对齐*/
+.wrapper{
+	position: relative;
+	width: 1110px;
+	margin: 100px auto;
+}
+#container{
+	float: left;
+}
+/*图片盒子样式*/
+.box{
+	position: relative;
+	float: left;
+}
+/*内容图片div样式*/
+.content{
+	padding:10px;
+	border: 1px solid #ccc;
+	box-shadow: 0 0 5px #ccc;
+	border-radius: 5px;
+}
+/*设置图片指定宽度，高度自动原始大小*/
+.content img{
+	width:192px;
+	height: auto;
+}
+/*回到顶部div*/
+.toTop{
+	position: fixed;
+	bottom:5px;
+	left:1190px;
+	width: 50px;
+	height: 48px;
+	cursor: pointer;
+	float: left;
+	border:1px solid #f9f9f8;
+	box-shadow: 0 1px 1px rgba(0,0,0,.2);
+	background: #fff url(../images/gotop.png) no-repeat 16px 15px;
+	display: none;
+}
