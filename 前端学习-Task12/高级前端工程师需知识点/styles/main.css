@@ -1,0 +1,145 @@
+html,
+body {
+  background-image: none;
+  background-color: #ebebeb;
+  min-width: 1200px;
+  font: 12px/1.5 "Helvetica Neue",Helvetica, Arial,"Hiragino Sans GB","Hiragino Sans GB W3","WenQuanYi Micro Hei","Microsoft YaHei UI","Microsoft YaHei",sans-serif;
+}
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,legend,button,input{
+	padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a:link, a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+a:hover {
+  text-decoration: underline;
+}
+.header {
+    height: 142px;
+    background: #FFF url(../images/bgTop.jpg) 50% 24% no-repeat;
+    background-size: cover;
+}
+
+.header h1 {
+    
+    color: #fff;
+    line-height: 110px;
+    padding-left: 20px;
+}
+
+.page {
+    width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 5px;
+    
+}
+
+.page .content {
+    padding: 25px 15px;
+    font-size: 14px;
+}
+
+.page .content h1 {
+    border-left: 3px solid #e67e22;
+    font-size: 20px;
+    color: #fff;
+    padding-left: 20px;
+    padding-right: 64px;
+}
+.page .content h1 a{
+    font-size: 25px;
+    color:black;
+}
+.page .content h1 a:hover{
+    color: #e67e22;
+    text-decoration: none;
+}
+.page ul{
+	font-size: 14px;
+	padding:0px 20px 0px 40px;
+	margin-bottom: 20px;
+}
+.page ul li{
+	list-style: disc;
+	display: list-item;
+	line-height: 1.8;
+}
+.page ul li a{
+	color: #e67e22;
+	text-decoration: none;
+	transition: color .3s;
+}
+.page ul li a:hover{
+	color: #e67e22;
+	text-decoration: underline;
+}
+.page p{
+
+	font-size: 14px;
+	line-height: 30px;
+	text-indent: 0;
+    padding: 0 20px 0 40px;
+}
+.page .mark{
+    padding: 0 20px 0 40px;
+    color:#ff00ff;
+}
+.page h2{
+    font-size: 24px;
+    font-weight:normal;
+    text-indent: 10px;
+    background: #E67E22;
+    color: #FFF;
+    border-radius: 5px;
+    margin:10px 0;
+    text-shadow: 2px 2px 3px #000;
+    box-shadow: 0px 0px 1px #E67E22,1px 1px 6px 1px rgba(10,10,0,.5);
+}
+.page h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin:35px 0 20px;
+    padding-left: 10px;
+    position: relative;
+}
+.page h3:before{
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 3px;
+    background:#53EA38;
+    top: 0;
+    left: 0;
+}
+
+.red{
+    color:#ff0000;
+    font-weight: bold;
+    font-size: 14px;
+}
+.green{
+	color: #7bcb44;
+}
+pre{
+	width: 500px;
+    border: 1px solid #ccc;
+    padding: 5px 60px 5px 20px;
+    margin-left: 40px;
+    background: #eee;
+}
+strong{
+	color:#ff000f;
+}
+.black{
+	color:#000;
+}
+.blue{
+    color:blue;
+}

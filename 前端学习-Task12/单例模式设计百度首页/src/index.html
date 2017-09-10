@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>百度一下，你就知道</title>
+	<link rel="stylesheet" type="text/css" href="./styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./styles/header.css">
+	<link rel="stylesheet" type="text/css" href="./styles/main.css">
+</head>
+<body>
+	<div class="wrapper">
+		<!--头部换肤背景层 begin-->
+		<div class="hf-header">
+			<div class="hf-menu">
+				<div class="hf-title">
+					<p class="p1"></p>
+					<p class="p2"></p>
+				</div>
+				<div class="hf-bg">
+					<div class="hf-bgCon">
+						<img class="big" src="images/bg0.jpg">
+	                    <img src="./images/bg1.jpg">
+	                    <img src="./images/bg2.jpg">
+	                    <img src="./images/bg3.jpg">
+	                    <img src="./images/bg4.jpg">
+	                    <img src="./images/bg5.jpg">
+	                    <img class="big" src="./images/bg6.jpg">
+	                    <img src="./images/bg7.jpg">
+	                    <img src="./images/bg8.jpg">
+	                    <img class="last" src="./images/bg9.jpg">
+	                    <img class="last" src="./images/bg10.jpg">
+	                    <img class="last" src="./images/bg11.jpg">
+					</div>
+					<!--背景预览 begin-->
+					<div class="hf-bgyl"></div>
+					<!--背景预览 end-->
+				</div>
+			</div>
+		</div>
+		<!--头部换肤背景层 end-->
+		<!-- 头部导航 begin-->
+		<div class="header" >
+			<div id="mi-header">
+				<div class="left_header">
+					<div class="show-weather"> 
+						<span class="show-city">苏州： </span>
+						<span class="show-icon">31℃</span>
+						<span class="show-temp"></span>
+					</div>
+					<div class="show-pollution "><span class="show-airParm polution-level-0">优</span><span class="show-vertical"> 39|</span></div>
+					<span class="hf">换肤</span>
+				</div>
+				<div id="ul_header">
+					<a href="http://news.baidu.com" class="mnav">新闻</a>
+					<a href="http://www.hao123.com" class="mnav">hao123</a>
+					<a href="http://map.baidu.com" class="mnav">地图</a>
+					<a href="http://v.baidu.com" class="mnav">视频</a>
+					<a href="http://tieba.baidu.com" class="mnav">贴吧</a>
+					<a href="http://xueshu.baidu.com" class="mnav">学术</a>
+					<a href="#" class="lg" id="open_login">登录</a>
+			
+					<!--用户登录状态栏 end-->
+					<a href="http://www.baidu.com/gaoji/preferences.html" class="st">设置</a>
+					
+					<a href="http://www.baidu.com/more/" name="tj_briicon" class="more" >更多产品</a>
+				</div>
+				<!-- 设置内的标签内容♦ begin-->
+				<div class="ul_stmenu">
+					<a href="javascript:;">搜索设置</a>
+					<a href="//www.baidu.com/gaoji/advanced.html" target="_blank">高级搜索</a>
+					<a href="javascript:;">关闭预测</a>
+					<a href="javascript:;">搜索历史</a>
+				</div>
+				<div class="ul_userinfo uif">
+					<a href="javascript:;">个人中心</a>
+					<a href="//www.baidu.com/gaoji/advanced.html" target="_blank">帐号设置</a>
+					<a href="javascript:;">意见反馈</a>
+					<a href="javascript:;">退出</a>
+				</div>
+				<!-- 设置内的标签内容♦  end-->
+				<div class="ul_sidebar">
+					<div class="sidebartitle">更多产品</div>
+					<div class="sidebar_more">
+						<a href="http://www.nuomi.com/?cid=002540"><span class="item1"></span>糯米</a>
+						<a href="http://music.baidu.com"><span class="item2"></span>音乐</a>
+						<a href="http://image.baidu.com"><span class="item3"></span>图片</a>
+						<a href="http://zhidao.baidu.com"><span class="item4"></span>知道</a>
+						<a href="http://wenku.baidu.com"><span class="item5"></span>文库</a>
+						<a href="http://top.baidu.com"><span class="item6"></span>风云榜</a>
+						<a href="http://www.baidu.com/more/">全部产品>></a>
+					</div>
+				</div>
+			</div>
+			<!-- 这个div是模拟登录后滚动条起作用后改变的头部样式  begin-->
+			<div class="s-form">
+				<div class="searchform">
+					<div class="form_wrapper">
+						<div class="bg">
+							<img src="./images/bd_logo1.png" alt="百度一下，你就知道">
+						</div>
+						<div class="search">
+							<span class="camera"></span>
+							<input type="text" class="search_input">
+							<input type="button"  class="search_btn" value="百度一下" />
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 这个div是模拟登录后滚动条起作用后改变的头部样式  begin-->
+		</div>
+		<div class="s-header">
+			<div class="s-searchform">
+				<div class="s-form_wrapper">
+					<a class="s-bg" style="vertical-align: top;display: inline-block;zoom: 1;">
+						<img src="./images/logo_top.png" alt="百度一下，你就知道" width="101" height="33">
+					</a>
+					<div class="search">
+						<span class="camera"></span>
+						<input type="text" class="search_input">
+						<input type="button"  class="search_btn" value="百度一下" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 头部导航 end-->
+		<!-- 中间搜索框form begin-->
+		
+		<!--登录后的内容 begin-->
+		<div class="page" >
+			<div class="tab-container">
+				<div class="tab-menu">
+					<div class="menu_item tab-menu-mine" id="mine">
+						<div class="mine-icon card_setts"></div>
+						<div class="mine-text">我的关注</div>
+					</div>
+					<div class="menu_item tab-menu-tj current" id="tj">推荐</div>
+					<div class="menu_item tab-menu-dh" id="dh">导航</div>
+					<div class="menu_item tab-menu-st" id="st">
+						<span class="card_setts st-icon"></span>
+					</div>
+				</div>
+				<div class="tab-news">
+					<div class="tab-content">
+						<div class="tab-mine">
+							<div class="mine_wrapper">
+								<div class="code_blocks">
+									<div class="block_container">
+										<span class="mine-title"> <div class="mine-title-icon"> <em></em> </div><span class="mine-title-text"> 我的导航 </span><span class="mine-title-num"> (<span>0</span>) </span> </span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-tj">
+							<div class="tips">
+								<div class="tips_l ibl">
+									<div class="tips-line ibl"></div>
+									<div class="tips-title ibl">
+										<span class="tips-icon ibl"></span>
+										<span class="ibl">以下信息根据您的兴趣推荐</span>
+									</div>
+									<div class="tips-line ibl"></div>
+								</div>
+								<div class="tips_r ibl">
+									<div class="hot-title ibl">实时热点</div>
+									<div class="hot-load ibl">
+										<span class="tips-icon ibl"></span>
+										<span class="ibl">换一换</span>
+									</div>
+								</div>
+							</div>
+							<div class="content-wrap">
+								<div class="ibl left-content">
+									<div class="news-wrap">
+										<!-- 新闻内容 begin-->
+										<div class="news-group">
+											<h2>
+												<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" title="8个令车主“怀疑人生”的情景" target="_blank"  class="s-title-yahei">8个令车主“怀疑人生”的情景</a>
+											</h2>
+											<div class="pic-content">
+												<ul class="news-content-imgs">
+													<li class="item-img-wrap ibl">
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/1.JPEG" > 
+														</a>
+													</li>
+													<li class="item-img-wrap mrg2 ibl"> 
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/2.JPEG" > 
+														</a>   
+													</li>
+													<li class="item-img-wrap ibl">
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/3.JPEG" > 
+														</a>   
+													</li>
+												</ul>
+											</div>
+											<div class="from">
+												<span>企业文问娱乐</span>
+												<span>07-30 15:43</span>
+											</div>
+										</div>
+										<!-- 新闻内容  end-->
+										<!-- 新闻内容 begin-->
+										<div class="news-group">
+											<h2>
+												<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" title="8个令车主“怀疑人生”的情景" target="_blank"  class="s-title-yahei">我家是两房两厅的，能装中央空调吗？</a>
+											</h2>
+											<div class="pic-content">
+												<ul class="news-content-imgs">
+													<li class="item-img-wrap ibl">
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/4.JPEG" > 
+														</a>
+													</li>
+													<li class="item-img-wrap mrg2 ibl"> 
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/5.JPEG" > 
+														</a>   
+													</li>
+													<li class="item-img-wrap ibl">
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/6.JPEG" > 
+														</a>   
+													</li>
+												</ul>
+											</div>
+											<div class="from">
+												<span> 秦人的风景 </span>
+												<span>07-30 00:49</span>
+											</div>
+										</div>
+										<!-- 新闻内容  end-->
+										<!-- 新闻内容 begin-->
+										<div class="news-group more-news">
+											<h2>
+												<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" title="8个令车主“怀疑人生”的情景" target="_blank"  class="s-title-yahei">手机续航有救了！这款充电宝电永远用不完</a>
+											</h2>
+											<div class="pic-content">
+												<ul class="news-content-imgs">
+													<li class="item-img-wrap ibl">
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/7.JPEG" > 
+														</a>
+													</li>
+													<li class="item-img-wrap mrg2 ibl"> 
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/8.JPEG" > 
+														</a>   
+													</li>
+													<li class="item-img-wrap ibl">
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/9.JPEG" > 
+														</a>   
+													</li>
+												</ul>
+											</div>
+											<div class="from">
+												<span> 腾讯新闻 </span>
+												<span>07-31 00:49</span>
+											</div>
+										</div>
+										<!-- 新闻内容  end-->
+										<!-- 新闻内容 begin-->
+										<div class="news-group more-news">
+											<h2>
+												<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" title="8个令车主“怀疑人生”的情景" target="_blank"  class="s-title-yahei">老照片：清末民国的客家女</a>
+											</h2>
+											<div class="pic-content">
+												<ul class="news-content-imgs">
+													<li class="item-img-wrap ibl">
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/11.JPEG" > 
+														</a>
+													</li>
+													<li class="item-img-wrap mrg2 ibl"> 
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/12.JPEG" > 
+														</a>   
+													</li>
+													<li class="item-img-wrap ibl">
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/13.JPEG" > 
+														</a>   
+													</li>
+												</ul>
+											</div>
+											<div class="from">
+												<span> 新浪历史 </span>
+												<span>07-31 03:30</span>
+											</div>
+										</div>
+										<!-- 新闻内容  end-->
+										<!-- 新闻内容 begin-->
+										<div class="news-group more-news">
+											<h2>
+												<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" title="8个令车主“怀疑人生”的情景" target="_blank"  class="s-title-yahei">上半年这些行业工资涨幅跑赢GDP！有你吗？</a>
+											</h2>
+											<div class="pic-content">
+												<ul class="news-content-imgs">
+													<li class="item-img-wrap ibl">
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/14.JPEG" > 
+														</a>
+													</li>
+													<li class="item-img-wrap mrg2 ibl"> 
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/15.JPEG" > 
+														</a>   
+													</li>
+													<li class="item-img-wrap ibl">
+														<a href="https://www.baidu.com/home/news/data/newspage?nid=3274102796585229039&n_type=0&p_from=1&dtype=-1" target="_blank"  title="8个令车主“怀疑人生”的情景" > 
+															<img class="s-news-img" src="./images/16.JPEG" > 
+														</a>   
+													</li>
+												</ul>
+											</div>
+											<div class="from">
+												<span> 腾讯新闻 </span>
+												<span>07-31 00:49</span>
+											</div>
+										</div>
+										<!-- 新闻内容  end-->
+									</div>
+								</div>
+								<div class="ibl right-content">
+									<ul class="hot-news-content">
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">失踪女教师告别信</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">故障致65人被困</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">马伊琍谈陈道明</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">骑车忘锁欠两千万</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">杨焕宁严重违纪</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">进藏遇事故丧生</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">轿车被撞成麻花</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">嫁外国小伙离婚难</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">林更新直播唱歌</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">伊能静回应暴瘦</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">逃避补课谎称被绑</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">故障致65人被困</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">肯尼亚现人骨遗骸</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">救晕倒孕妇获奖励</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">两兄弟家人失联</a>
+										</li>
+										<li class="news-item">
+											<a href="https://www.baidu.com/s?cl=3&tn=baidutop10&fr=top1000&wd=%E5%A4%B1%E8%B8%AA%E5%A5%B3%E6%95%99%E5%B8%88%E5%91%8A%E5%88%AB%E4%BF%A1&rsv_idx=2">非法改装豪车遭查</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="tab-dh">
+							<h1 class="tab3_title">猜您喜欢</h1>
+								<div class="s-navitem">
+									<div class="navitem">
+										<a href="http://www.nuomi.com/?vip_frm=super_nav_vip" target="_blank">
+											<img id='bdnm' border="none">
+											<span class="nav-txt">百度糯米</span>
+										</a>
+									</div>
+									<div class="navitem">
+										<a href="www.jd.com">
+											<img id='jdsc'>
+											<span class="nav-txt">京东商城</span>
+										</a>
+									</div>
+									<div class="navitem">
+										<a href="http://www.yhd.com/?vip_frm=super_nav_vip" title="1号店" class="nav-block" target="_blank" >
+											<img id='yihd'>
+											<span class="nav-txt">1号店</span>
+										</a>
+									</div>
+									<div class="navitem">
+										<a href="http://www.suning.com/?vip_frm=super_nav_vip" title="苏宁易购">
+										<img id='snyg'><span class="nav-txt">苏宁易购</span></a>
+									</div>
+									<div class="navitem">
+										<a href="http://www.vip.com/?vip_frm=super_nav_vip" title="唯品会" >
+										<img id='wph'><span class="nav-txt">唯品会</span></a>
+									</div>
+									<div class="navitem">
+										<a href="http://www.jsjtxx.com/" title="江苏交通学习网" >
+										<img id='jsjt'><span class="nav-txt">江苏交通</span></a>
+									</div>
+									<div class="navitem">
+										<a href="http://kmy.jsyks.com/" title="驾照">
+										<img id='jz'><span class="nav-txt">驾照</span></a>
+									</div>
+									<div class="navitem">
+										<a href="http://www.cebbank.com/" title="光大银行">
+										<img id='gdyh'><span class="nav-txt">光大银行</span></a>
+									</div>
+									<div class="navitem">
+										<a href="http://dl.pconline.com.cn/download/171892.html" title="微信电脑版官方下载_微信电脑版下载【最新网页版】-太平洋下载中心">
+										<img id='wxdn'><span class="nav-txt">微信电脑...</span></a>
+									</div>
+									<div class="navitem">
+										<a href="http://www.taobao.com/" title="淘宝网">
+										<img id='taobao'><span class="nav-txt">淘宝网</span></a>
+									</div>
+									<div class="navitem">
+										<a href="https://wx.qq.com/" title="微信" class="nav-block">
+										<img id='wx'><span class="nav-txt">微信</span></a>
+									</div>
+									<div class="navitem">
+										<a href="http://www.douyutv.com/" title="斗鱼" class="nav-block">
+										<img id='dy'><span class="nav-txt">斗鱼</span></a>
+									</div>
+									<div class="navitem">
+										<a href="http://www.qq.com/" title="腾讯" class="nav-block">
+										<img id='tx'><span class="nav-txt">腾讯</span></a>
+									</div>
+									<div class="navitem">
+										<a href="http://www.iqiyi.com/" title="爱奇艺" class="nav-block">
+										<img id='qiyi'><span class="nav-txt">爱奇艺</span></a>
+									</div>
+									<div class="navitem">
+										<a href="http://www.12306.cn/" title="铁路客户服务中心" class="nav-block">
+										<img id='tlkh'><span class="nav-txt">铁路客户</span></a>
+
+									</div>
+									<div class="navitem">
+										<a href="http://www.youku.com/" title="优酷网" class="nav-block">
+										<img id='ykw'><span class="nav-txt">优酷网</span></a>
+									</div>
+									<div class="navitem">
+										<a href="http://www.163.com/" title="网易" class="nav-block">
+										<img id='wy'><span class="nav-txt">网易</span></a>
+				
+									</div>
+									<div class="navitem">
+										<a href="http://www.58.com/" title="58同城" class="nav-block">
+										<img id='tc58'><span class="nav-txt">58同城</span></a>
+									</div>
+									<div class="navitem">
+										<a href="http://weibo.com/" title="新浪微博" class="nav-block">
+										<img id='xlwb'><span class="nav-txt">新浪微博</span></a>
+									</div>
+									<div class="navitem">
+										<a href="http://www.alipay.com/" title="支付宝" class="nav-block">
+										<img id='zfb'><span class="nav-txt">支付宝</span></a>
+									</div>
+									<div class="navitem">
+										
+										<a href="https://www.microsoft.com/zh-cn/store/apps/windows/" title="微软商店">
+										<img id='wr'><span class="nav-txt">微软商店</span></a>
+									</div>
+								</div>
+						</div>
+						<div class="tab-st"></div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="more-bar">
+				<span class="load-text">点击查看更多</span>
+				<div class="down-arrow card_setts">
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<!--登录后的内容 end-->
+		
+		<!-- 中间搜索框form end-->
+
+		
+
+		<!--底部 begin-->
+		<div class="footer">
+			<div class="footerCon">
+				<div class="qrcodeCon">
+					<span class="qrcode"></span>
+					<span class="codetext">手机百度</span>
+				</div>
+				<div class="ftCon">
+					<p id="lh">
+						<a id="setf" href="//www.baidu.com/cache/sethelp/help.html" onmousedown="return ns_c({'fm':'behs','tab':'favorites','pos':0})" target="_blank">把百度设为主页</a>
+						<a onmousedown="return ns_c({'fm':'behs','tab':'tj_about'})" href="http://home.baidu.com">关于百度</a>
+						<a onmousedown="return ns_c({'fm':'behs','tab':'tj_about_en'})" href="http://ir.baidu.com">About&nbsp;&nbsp;Baidu</a>
+						<a onmousedown="return ns_c({'fm':'behs','tab':'tj_tuiguang'})" href="http://e.baidu.com/?refer=888">百度推广</a>
+					</p>
+					<p id="cp">©2017&nbsp;Baidu&nbsp;<a href="http://www.baidu.com/duty/" onmousedown="return ns_c({'fm':'behs','tab':'tj_duty'})">使用百度前必读</a>&nbsp;
+						<a href="http://jianyi.baidu.com/" class="cp-feedback" onmousedown="return ns_c({'fm':'behs','tab':'tj_homefb'})">意见反馈</a>&nbsp;
+						京ICP证030173号&nbsp;<i class="c-icon-icrlogo"></i>&nbsp;
+						<a id="jgwab" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号</a>&nbsp;
+						<i class="c-icon-jgwablogo"></i>
+					</p>
+				</div>
+			</div>
+		</div>
+		<!-- 底部 end-->
+		<!-- 回到顶部 begin-->
+		<div class="toTop" title="回到顶部"></div>
+		<!-- 回到顶部 end-->
+		<!-- 遮罩div begin-->
+		<div class="fullbg"></div>
+		<!-- 遮罩div end-->
+		<!-- 登录div begin-->
+		<div class="loginDiv">
+			<div class="logintitle">
+				<div class="lg_left">
+					<span id="titleText">登录百度帐号</span>
+				</div>
+				<div class="lg_right">
+					<a href="javascript:void(0);" id="btn_close" class="close_btn"></a>
+				</div>
+			</div>
+			<div class="formgroup">
+				<div class="pass-smsSwitchWrapper">
+					<a href="javascript:void(0);">短信快捷登录</a>
+				</div>
+				<div class="userName">
+					<input type="text" class="account" placeholder="手机/邮箱/用户名">
+					
+				</div>
+				<div class="userPwd">
+					<input type="text" class="pwd" placeholder="密码">
+				</div>
+				<div class="login">
+					<p>模拟帐号1：帐号(admin);密码(123)</p>
+					<p>模拟帐号2：帐号(user);密码(123)</p>
+					<input type="button" class="loginbtn" id="btn_login" value="登录">
+				</div>
+			</div>
+		</div>
+		<!-- 登录div end-->
+	</div>
+	<script type="text/javascript" src="./scripts/jquery.min.js"></script>
+	<script type="text/javascript" src="./scripts/default.js"></script>
+
+</body>
+</html>
