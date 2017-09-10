@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>简易计算器</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="txtResult" >
+			<input type="text" id="textResult" class="text" value="0" disabled="disabled">
+		</div>
+		<div class="buttons">
+			<input type="button" value="←" class="button color-red" onclick="operator('backspace')">
+			<input type="button" value="+/-" class="button color-blue" onclick="operator('opposite')">
+			<input type="button" value="C" class="button color-red" onclick="operator('clear')">
+			<input type="button" value="÷" class="button color-blue" onclick="operator('divide')">
+			<input type="button" value="7" class="button" onclick="typeofinput('7')">
+			<input type="button" value="8" class="button" onclick="typeofinput('8')">
+			<input type="button" value="9" class="button" onclick="typeofinput('9')">
+			<input type="button" value="*" class="button color-blue" onclick="operator('multiply')">
+			<input type="button" value="4" class="button" onclick="typeofinput('4')">
+			<input type="button" value="5" class="button" onclick="typeofinput('5')">
+			<input type="button" value="6" class="button" onclick="typeofinput('6')">
+			<input type="button" value="-" class="button  color-blue" onclick="operator('minus')">
+			<input type="button" value="1" class="button" onclick="typeofinput('1')">
+			<input type="button" value="2" class="button" onclick="typeofinput('2')">
+			<input type="button" value="3" class="button" onclick="typeofinput('3')">
+			<input type="button" value="+" class="button color-blue" onclick="operator('plus')">
+			<input type="button" value="0" class="button ling" onclick="typeofinput('0')">
+			<input type="button" value="." class="button" onclick="typeofinput('.')"> 
+			<input type="button" value="=" class="button color-red" onclick="operator('result')">
+		</div>
+	</div>
+	<script src="script.js"></script>
+	<script type="text/javascript">
+		function sortNumber(a, b)
+		{
+		return a - b
+		}
+
+		var arr = new Array(6)
+		arr[0] = "10"
+		arr[1] = "5"
+		arr[2] = "40"
+		arr[3] = "25"
+		arr[4] = "1000"
+		arr[5] = "1"
+
+		document.write(arr + "<br />")
+		document.write(arr.sort(sortNumber))
+	</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>统计数组中相同元素、个数、索引位置</title>
+	<div class="wrapper">
+		<p>
+			<span>数组:</span><span>"a","x","b","d","m","a","k","m","p","j","a"</span>
+		</p>
+	</div>
+	<script type="text/javascript">
+		var arrSource=["a","x","b","d","m","a","k","m","p","j","a"];
+		//数组的索引位置
+		var arrPos={};
+		//计数器
+		var count={};
+		//遍历原数组生成新的数组
+		for(var i=0;i<arrSource.length;i++){
+			var char = arrSource[i];
+			if(count[char]){
+				count[char]+=1;//相同字母累加次数
+				arrPos[char]+=","+i;//记录当前字母索引位置,相同的字母以逗号分隔记录
+			}
+			else{
+				count[char]=1;//无重复的字母记录1次
+				arrPos[char]=i;//记录当前字母索引位置
+			}
+		};
+		//获得count数组中key值
+		var keys=Object.keys(count);
+		//对数组进行排序
+		function sortNum(a,b){
+			return count[a]<=count[b];
+		}
+		keys.sort(sortNum);
+		//找出出现次数最多的字母(降序后取第一个数字)
+		var max=count[keys[0]];
+
+		//将出现次数最多的字母记录在arr_out并输出
+		var arr_out=[];
+		for(i in count){
+			if(count[i]>=max){
+				max=count[i];//取出现最多的字母次数赋给max
+				arr_out.push(i);//出现最多次数的字母放入输出数组中
+			}
+		}
+		//输出出现次数最多的字母
+		document.write("出现最多的字母是:"+arr_out+"<br>");
+		//输出记录
+		for(var i=0;i<arr_out.length;i++){
+			document.write(arr_out[i]+'出现了'+count[arr_out[i]]+"次<br>");
+			document.write(arr_out[i]+'出现的位置分别为:'+arrPos[arr_out[i]]+"<br>");
+		}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
