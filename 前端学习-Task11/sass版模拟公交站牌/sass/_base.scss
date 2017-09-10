@@ -1,0 +1,59 @@
+html,
+body,
+,
+article,
+ul,
+li,
+ol,
+div {
+    box-sizing: border-box;
+    list-style: none;
+}
+
+
+
+
+/**
+ * 定义盒模型(这里全采用flex)
+ */
+
+@mixin display-type($type) {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
+
+/**
+ * 元素对齐方式
+ */
+
+@mixin justify-content($val) {
+    -webkit-justify-content: $val;
+    justify-content: $val;
+
+}
+
+@mixin align-items($align) {
+    -webkit-box-align: $align;
+    -moz-box-align: $align;
+    -ms-flex-align: $align;
+    -webkit-align-items: $align;
+    align-items: $align;
+}
+
+
+/**
+ * 盒模型类型
+ */
+
+@mixin direction-type($flex-direction) {
+    -webkit-flex-direction: $flex-direction;
+    flex-direction: $flex-direction;
+}
+
+@mixin boxSizing($sizing) {
+    box-sizing: $sizing;
+}

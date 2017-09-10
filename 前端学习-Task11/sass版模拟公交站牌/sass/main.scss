@@ -1,0 +1,192 @@
+@import 'base';
+@import 'config';
+
+
+html,
+body {
+    height: 100%;
+    background: $bg-color;
+    padding: 0;
+    margin: 0;
+}
+
+
+/**
+ * 公交指示牌以580*300大小居中显示
+ */
+
+.wrapper {
+    position: relative;
+    height: 100%;
+    min-width: 580px;
+    .buscard {
+        position: absolute;
+        width: 580px;
+        height: 300px;
+        background: $white;
+        top: 50%;
+        margin-top: -150px;
+        left: 50%;
+        margin-left: -290px;
+        background: $primary-color; //border: 2px solid $primary-color;
+    }
+}
+
+
+/**
+ * 站牌头部信息
+ */
+
+.l-header {
+    @include boxSizing(border-box);
+    @include display-type(flex);
+    height: 100px;
+    background: $three-color;
+    padding-top: 15px;
+    .l-header__left {
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        div {
+            @include display-type(flex);
+            @include direction-type(column);
+        }
+        span {
+            @include display-type(flex);
+            @include justify-content(center);
+        }
+        .num {
+            flex-grow: 4;
+            color: $white;
+            font-family: arial;
+            font-size: 46px;
+        }
+        .text {
+            flex-grow: 1;
+            div {
+                width: 68px;
+                background: #2d90f2;
+                font-size: 16px;
+                color: $white;
+                @include display-type(flex);
+                @include justify-content(flex-start);
+            	@include align-items(center);
+                font-family: $primary-family;
+            }
+        }
+    }
+    //头部右侧部分信息
+    .l-header__right {
+        position: relative;
+        box-sizing: border-box;
+        -webkit-flex-grow: 11;
+        flex-grow: 11;
+        padding-top: 1px;
+        margin-left: 20px;
+        .top {
+            position: relative;
+            color: $white;
+            font-size: 22px;
+            font-family: $primary-family; 
+            @include display-type(flex);
+            @include justify-content(flex-start);
+            @include align-items(center);
+            i {
+                position: relative;
+                width: 85px;
+                height: 2px;
+                background: $white;
+                margin: 0 10px;
+                &:after {
+                    position: absolute;
+                    display: flex;
+                    content: '';
+                    width: 8px;
+                    height: 8px;
+                    border-top: 2px solid $white;
+                    border-right: 2px solid $white;
+                    top: -4px;
+                    right: -2px;
+                    transform: rotate(45deg);
+                }
+            }
+            span:nth-child(4n) {
+                position: absolute;
+                top: 5px;
+
+                right: 10px;
+                color: $white;
+                font-size: 13px;
+                border: 1px solid $white;
+                padding: 0px 4px;
+
+                @include display-type(flex);
+                @include justify-content(center);
+                @include align-items(center);
+
+                &:before {
+                    display: inline-block;
+                    content: '';
+                    width: 18px;
+                    height: 18px;
+                    background: url(../images/icon.png) -84px 5px no-repeat;
+                    color: $white;
+                    margin-right: 5px;
+                }
+            }
+        }
+        .bottom {
+            position: absolute;
+            top: 35px;
+            div {
+                color: $white;
+                font-size: 14px;
+            }
+            div:nth-child(1n) {
+                // flex-grow:9;
+            }
+            div:nth-child(2n) {
+                span:first-child {
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
+
+.l-page {
+    box-sizing: border-box;
+    background: $white;
+    border: 2px solid $primary-color;
+    border-top: 0;
+    ul {
+        padding: 10px 10px;
+        margin: 0;
+        height: 200px;
+        @include display-type(flex);
+        @include justify-content(space-between);
+    }
+    li {
+        text-align: center;
+        width: 26px;
+        font-size: 14px;
+        text-align: center; //定义li的flex伸缩盒
+        @include display-type(flex);
+        @include direction-type(column);
+        @include justify-content(flex-start);
+        span {
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+        span:after {
+            display: block;
+            content: '';
+            width: 16px;
+            height: 16px;
+            overflow: hidden;
+            background: url(../images/icon.png) 5px -162px no-repeat;
+        }
+    }
+    .on {
+        color: #ff0000;
+    }
+}

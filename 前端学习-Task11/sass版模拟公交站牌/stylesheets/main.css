@@ -1,0 +1,248 @@
+@charset "UTF-8";
+html,
+body,
+article,
+ul,
+li,
+ol,
+div {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/**
+ * 定义盒模型(这里全采用flex)
+ */
+/**
+ * 元素对齐方式
+ */
+/**
+ * 盒模型类型
+ */
+html,
+body {
+  height: 100%;
+  background: #f0f0f0;
+  padding: 0;
+  margin: 0;
+}
+
+/**
+ * 公交指示牌以580*300大小居中显示
+ */
+.wrapper {
+  position: relative;
+  height: 100%;
+  min-width: 580px;
+}
+.wrapper .buscard {
+  position: absolute;
+  width: 580px;
+  height: 300px;
+  background: #fff;
+  top: 50%;
+  margin-top: -150px;
+  left: 50%;
+  margin-left: -290px;
+  background: #248bf2;
+}
+
+/**
+ * 站牌头部信息
+ */
+.l-header {
+  box-sizing: border-box;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 100px;
+  background: #389cff;
+  padding-top: 15px;
+}
+.l-header .l-header__left {
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+.l-header .l-header__left div {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+.l-header .l-header__left span {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.l-header .l-header__left .num {
+  flex-grow: 4;
+  color: #fff;
+  font-family: arial;
+  font-size: 46px;
+}
+.l-header .l-header__left .text {
+  flex-grow: 1;
+}
+.l-header .l-header__left .text div {
+  width: 68px;
+  background: #2d90f2;
+  font-size: 16px;
+  color: #fff;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-family: "Microsoft YaHei", 微软雅黑;
+}
+.l-header .l-header__right {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-flex-grow: 11;
+  flex-grow: 11;
+  padding-top: 1px;
+  margin-left: 20px;
+}
+.l-header .l-header__right .top {
+  position: relative;
+  color: #fff;
+  font-size: 22px;
+  font-family: "Microsoft YaHei", 微软雅黑;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.l-header .l-header__right .top i {
+  position: relative;
+  width: 85px;
+  height: 2px;
+  background: #fff;
+  margin: 0 10px;
+}
+.l-header .l-header__right .top i:after {
+  position: absolute;
+  display: flex;
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  top: -4px;
+  right: -2px;
+  transform: rotate(45deg);
+}
+.l-header .l-header__right .top span:nth-child(4n) {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #fff;
+  font-size: 13px;
+  border: 1px solid #fff;
+  padding: 0px 4px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.l-header .l-header__right .top span:nth-child(4n):before {
+  display: inline-block;
+  content: '';
+  width: 18px;
+  height: 18px;
+  background: url(../images/icon.png) -84px 5px no-repeat;
+  color: #fff;
+  margin-right: 5px;
+}
+.l-header .l-header__right .bottom {
+  position: absolute;
+  top: 35px;
+}
+.l-header .l-header__right .bottom div {
+  color: #fff;
+  font-size: 14px;
+}
+.l-header .l-header__right .bottom div:nth-child(2n) span:first-child {
+  margin-right: 30px;
+}
+
+.l-page {
+  box-sizing: border-box;
+  background: #fff;
+  border: 2px solid #248bf2;
+  border-top: 0;
+}
+.l-page ul {
+  padding: 10px 10px;
+  margin: 0;
+  height: 200px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.l-page li {
+  text-align: center;
+  width: 26px;
+  font-size: 14px;
+  text-align: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+.l-page li span {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.l-page li span:after {
+  display: block;
+  content: '';
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+  background: url(../images/icon.png) 5px -162px no-repeat;
+}
+.l-page .on {
+  color: #ff0000;
+}
