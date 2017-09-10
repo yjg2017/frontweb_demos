@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hao123_上网从这里开始</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+	<div class="wrapper" id="body">
+		<div class="header page_width">
+			<!--头部背景 begin-->
+			<div class="header_bg"></div>
+			<!--头部背景 end-->
+			<div class="inner_header">
+				<!--头部Logo begin-->
+				<div class="header_logo">
+					<a href="#">
+						<img src="images/header-logo.png" alt="hao123_上网从这里开始">
+					</a>
+				</div>
+				<!--头部Logo end-->
+				<!--头部左  城市,天气,温度 begin-->
+				<div class="header_left">
+					<div class="weather">
+						<!--城市 begin-->
+						<a href="#" class="weather_item weather_city">
+							<!--城市-->
+							<span class="weather_cityName">苏州</span>
+							<!--倒三角形-->
+							<span class="weather_city_arrow"></span>
+						</a>
+						<!--pm2.5-->
+						<a href="#" class="weather_item weather_pm25">
+							<span class="weather_pm25_text">良</span>
+						</a>
+						<!--天气-->
+						<a href="#" class="weather_item weather_info">
+							<span class="weather_info_icon"></span>
+							<span class="weather_info_text">晴</span>
+							<span class="weather_info_temperature">40 ~ 31℃</span>
+						</a>
+						<!--7日天气-->
+						<a href="#" class="weather_item weather_site" title="7日天气">
+							<span class="weather_site_icon"></span>
+						</a>
+						<!--城市 end-->
+					</div>
+					<div class="calendar">
+						<a href="#" class="calendar_link">
+							<span>7月23日</span>
+							<span>周六</span>
+						</a>
+						<span class="calendar_text">大暑</span>
+					</div>
+					<div class="star">
+						<span>星座运势</span>
+					</div>
+				</div>
+				<!--头部左  城市,天气,温度 end-->
+				<div class="header_right">
+					<a href="#">登录</a>
+					<a href="#">网盘</a>
+					<a href="#">邮箱</a>
+					<a href="#">手机版</a>
+					<a href="#">换肤</a>
+				</div>
+			</div>
+		</div>
+		<div class="search-body page_width">
+			<div class="search">
+				<div class="img"></div>
+				<!--搜索框 begin-->
+				<div class="search_text">
+					<form action="https://www.baidu.com/s" target="_blank" class="form_hook">
+						<!--搜索框-->
+						<div class="input_wrapper">
+							<a href="#" class="tabs_toggle">
+								<span class="tab_curr">网页</span>
+								<i class="weather_city_arrow"></i>
+							</a>
+							<input type="text" class="input_text" placeholder="搜你想搜的">
+						</div>
+						<!--搜索按纽-->
+						<div class="button_wrapper">
+							<input type="submit" value="百度一下" />
+						</div>	
+					</form>
+				</div>
+				<!--搜索框 end-->
+				<!--更换主题颜色 begin-->
+				<div id="themes" class="themes">
+					<div id="red" class="theme red" title="主题色(红)"></div>
+					<div id="yellow" class="theme yellow" title="主题色(黄)"></div>
+					<div id="blue" class="theme blue" title="主题色(蓝)"></div>
+					<div id="green" class="theme green" title="主题色(绿)"></div>
+				</div>
+				<!--更换主题颜色 end-->
+			</div>
+			
+		</div>
+		<!--热门搜索 begin-->
+		<div class="hotsearch page_width">
+			<ul >
+					<li class="hotsearch_query"></li>
+					<li>苏州天气</li>
+					<li>NBA</li>
+					<li>林肯公园主唱自杀</li>
+					<li>胡彦斌怒对狗仔</li>
+					<li>爱情公寓5</li>
+					<li>杭州爆炸</li>
+					<li>唐晶求婚贺涵</li>
+				</ul>
+		</div>
+		<!--热门搜索 end-->
+		<!--导航 begin-->
+		<div class="bodyCon page_width">
+			<ul id="menus" class="menus">
+				<li class="g_gc"><a href="#" class="first gfc gbg" id="home">首页</a></li>
+				<li class="g_gc"><a href="#" class="link gfc_1">电视剧</a></li>
+				<li class="g_gc"><a href="#" class="link gfc_1">最新电影</a></li>
+				<li class="g_gc"><a href="#" class="link gfc_1">新闻头条</a></li>
+				<li class="g_gc"><a href="#" class="link gfc_1">八卦娱乐</a></li>
+				<li class="g_gc"><a href="#" class="link gfc_1">军事热点</a></li>
+				<li class="g_gc"><a href="#" class="link gfc_1">热门游戏</a></li>
+				<li class="g_gc"><a href="#" class="link gfc_1">小游戏</a></li>
+				<li class="g_gc"><a href="#" class="link gfc_1">今日特价</a></li>
+				<li class="g_gc"><a href="#" class="link gfc_1">特价旅游</a></li>
+				<li class="g_gc"><a href="#" class="link gfc_1">热点车讯</a></li>
+			</ul>
+			<ul class="govisite gbr" id="qw">
+				<li class="g_gc"><a href="#" class="first gfc" id="qwtj">权威推荐</a></li>
+				<li class="g_gc"><a href="">人民网</a></li>
+				<li class="g_gc"><a href="">新华网</a></li>
+				<li class="g_gc"><a href="">央视网</a></li>
+				<li class="g_gc"><a href="">国际在线</a></li>
+				<li class="g_gc"><a href="">中国日报</a></li>
+				<li class="g_gc"><a href="">中国网</a></li>
+				<li class="g_gc"><a href="">中经网</a></li>
+				<li class="g_gc"><a href="">光明网</a></li>
+				<li class="g_gc"><a href="">央广网</a></li>
+				<li class="g_gc"><a href="">求是网</a></li>
+				<li class="g_gc"><a href="">中青网</a></li>
+				<li class="g_gc"><a href="">网信网</a></li>
+				<li class="g_gc"><a href="">苏州市政府</a></li>
+			</ul>
+		</div>
+		<!--导航 end-->
+		<!---->
+		<div class="content page_width">
+			
+			<div class="layout_site_left">
+				<!--中间导航部分/左侧第一小块 begin-->
+				<div class="aside1">
+					<div class="side_box">
+						<div class="starbar_list i_tv">
+							<a href="#">电视剧</a>
+							<s class="split">|</s>
+							<a href="#">综艺</a>
+						</div>
+						<div class="starbar_list i_game">
+							<a href="#">游戏</a>
+							<s class="split">|</s>
+							<a href="#">小游戏</a>
+						</div>
+						<div class="starbar_list i_movie">
+							<a href="#">电影</a>
+							<s class="split">|</s>
+							<a href="#">直播</a>
+						</div>
+						<div class="starbar_list i_comic">
+							<a href="#">动画</a>
+							<s class="split">|</s>
+							<a href="#">漫画</a>
+						</div>
+						<div class="starbar_list i_toutiao">
+							<a href="#">新闻</a>
+							<s class="split">|</s>
+							<a href="#">军事</a>
+						</div>
+						<div class="starbar_list i_travel">
+							<a href="#">旅游</a>
+							<s class="split">|</s>
+							<a href="#">音乐</a>
+						</div>
+						<div class="starbar_list i_caipiao">
+							<a href="#">彩票</a>
+							<s class="split">|</s>
+							<a href="#">竞猜</a>
+						</div>
+						<div class="starbar_list i_gaoxiao">
+							<a href="#">搞笑</a>
+							<s class="split">|</s>
+							<a href="#">小说</a>
+						</div>
+
+						<div class="starbar_list i_tuan">
+							<a href="#">特价</a>
+							<s class="split">|</s>
+							<a href="#">手机</a>
+						</div>
+						<div class="starbar_list i_music">
+							<a href="#">股票</a>
+							<s class="split">|</s>
+							<a href="#">理财</a>
+						</div>
+					</div>
+				</div>
+				<!--中间导航部分/左侧第一小块 end-->
+				<!--中间导航部分/左侧第二小块 -->
+				<div class="aside2">
+					<ul class="toptab1">
+						<li><a href="#" class="first">推荐</a></li>
+						<li><a href="#">社会</a></li>
+						<li><a href="#">娱乐</a></li>
+						<li><a href="#">军事</a></li>
+						<li><a href="#">体育</a></li>
+					</ul>
+					<!--新闻资讯 begin-->
+					<div class="topzixun">
+						<div class="zx_img"></div>
+						<p monkey="text">
+							<a href="http://www.fawan.com/2017/07/23/306869t185.html" title="本周11只大老虎亮相 其中4个最为重磅" class="link js_link">
+								<span index="0">本周11只大老虎亮相 其中4个最为重磅</span>
+							</a>
+						</p>
+						<p monkey="text">
+							<a href="http://hot.ynet.com/2017/07/23/306680t1593.html" title="切尔西球员“辱华”:莫名其妙又极恶毒" class="link js_link">
+								<span index="1">切尔西球员“辱华”:莫名其妙又极恶毒</span>
+							</a>
+						</p>
+						<p monkey="text">
+							<a href="http://hot.ynet.com/2017/07/23/306680t1593.html" title="切尔西球员“辱华”:莫名其妙又极恶毒" class="link js_link">
+								<span index="1">美媒称若中印冲突印方获胜 真相是什么</span>
+							</a>
+						</p>
+						<p monkey="text">
+							<a href="http://hot.ynet.com/2017/07/23/306680t1593.html" title="切尔西球员“辱华”:莫名其妙又极恶毒" class="link js_link">
+								<span index="3">得州加州之后 又一个地方想脱离美国</span>
+							</a>
+						</p>
+						<p monkey="text">
+							<a href="http://hot.ynet.com/2017/07/23/306680t1593.html" title="切尔西球员“辱华”:莫名其妙又极恶毒" class="link js_link">
+								<span index="4">八达岭野生动物园又出事！ 熊扒住车窗</span>
+							</a>
+						</p>
+						<p monkey="text">
+							<a href="http://hot.ynet.com/2017/07/23/306680t1593.html" title="切尔西球员“辱华”:莫名其妙又极恶毒" class="link js_link">
+								<span index="5">女子输液意外死亡 涉事医生:我太倒霉</span>
+							</a>
+						</p>
+						<div class="zx_img1"></div>
+						<p monkey="text">
+							<a href="http://www.hao123.com/gaoxiao/haomeizi/966" title="hao妹子:色狼因女子长得丑 强奸变劫财" class="link js_link g_red" >
+								<span index="5">hao妹子:色狼因女子长得丑 强奸变劫财</span>
+							</a>
+						</p>
+						<p monkey="text">
+							<a href="http://www.kejixun.com/article/170721/351773.shtml" title="2016人均收入排名:浙江超全国平均水平" class="link js_link" >
+								<span index="6">2016人均收入排名:浙江超全国平均水平</span>
+							</a>
+						</p>
+					</div>
+					<!--新闻资讯 end-->
+				</div>
+				<!--中间导航部分/左侧第二小块 end-->
+			</div>
+			<!--主体中间部分 begin-->
+			<div class="layout_site_content">
+				<div class="layout_1" id="ly1">
+					<div class="box_site_1">
+						<ul class="site_bd">
+							<li><a href="#" class="sitemainlink bd">百度</a> • <a href="#">贴吧</a></li>
+							<li><a href="#" class="sitemainlink xl">新浪</a> • <a href="#">微博</a></li>
+							<li><a href="#" class="sitemainlink sh">搜狐</a> • <a href="#">热点</a></li>
+							<li><a href="#" class="sitemainlink tx">腾讯</a></li>
+							<li><a href="#" class="sitemainlink wy">网易</a></li>
+							<li><a href="#" class="sitemainlink ykw wh100">优酷网</a></li>
+							<li><a href="#" class="sitemainlink tm">天猫</a> • <a href="#">精选</a></li>
+							<li><a href="#" class="sitemainlink fhw">凤凰网</a></li>
+							<li><a href="#" class="sitemainlink tb">淘宝网</a></li>
+							<li><a href="#" class="sitemainlink mfyx wh100">免费游戏</a></li>
+							<li><a href="#" class="sitemainlink ssjj">4399游戏</a></li>
+							<li><a href="#" class="sitemainlink h123">hao123影视</a></li>
+							<li><a href="#" class="sitemainlink jd wh100">京东商城</a></li>
+							<li><a href="#" class="sitemainlink sn wh100">苏宁易购</a></li>
+							<li><a href="#" class="sitemainlink jrtj">今日特价</a></li>
+							<li><a href="#" class="sitemainlink ty">体育</a> • <a href="#">NBA</a></li>
+							<li><a href="#" class="sitemainlink qczj">汽车之家</a></li>
+							<li><a href="#" class="sitemainlink jhs wh100">聚划算</a></li>
+						</ul>
+						<ul class="site_bd">
+							<li><a href="#" class="">东方财富</a> • <a href="#">理财</a></li>
+							<li><a href="#" class="tc58 wh100"><span>58同城</span></a></li>
+							<li><a href="#" class="ftx wh100"><span>房天下</span></a></li>
+							<li><a href="#" class="xclxw wh100"><span>携程旅行网</span></a></li>
+							<li><a href="#" >37游戏</a></li>
+							<li><a href="#" >12306</a> • <a href="#">旅游</a></li>
+							<li><a href="#" >百度地图</a> • <a href="#">天气</a></li>
+							<li><a href="">六间房直播</a></li>
+							<li><a href="#" >彩票</a> • <a href="#">双色球</a></li>
+							<li><a href="#" class="qne wh100"><span>去哪儿</span></a></li>
+							<li><a href="#">头条新闻</a></li>
+							<li><a href="#">QQ邮箱</a></li>
+							<li><a href="#" class="rrd wh100"><span>人人贷理财</span></a></li>
+							<li><a href="#" class="theme_green" name="themecls"  >哗哩哗哩</a></li>
+							<li><a href="#" class="wph wh100"><span>唯品会</span></a></li>
+							<li><a href="#" class="theme_green" name="themecls" >休闲小游戏</a></li>
+							<li><a href="#" class="atb wh100 themecls"><span>爱淘宝</span></a></li>
+							<li><a href="#" class="theme_green" name="themecls" >微信网页版</a></li>
+						</ul>
+						
+					</div>
+					<div class="famoussite">
+							<div class="wf_line"></div>
+							<span class="tuijian_icon"></span>
+							<div class="box_site_1">
+								<ul class="site_bd">
+									<li><a href="#" class="">健康养生</a></li>
+									<li><a href="#" class="">爱奇艺高清</a></li>
+									<li><a href="#" class="">新浪新闻</a></li>
+									<li><a href="#" class="">起点中文网</a></li>
+									<li><a href="#" class="theme_green" name="themecls">163邮箱</a></li>
+									<li><a href="#" class="">新浪</a></li>
+								</ul>
+							</div>
+					</div>
+				</div>
+				<div class="layout_2">
+					<ul>
+						<li><a href="#">聚划算</a></li>
+						<li><a href="#">斗地主达人</a></li>
+						<li><a href="#">OPPO特惠场</a></li>
+						<li><a href="#">理财大学</a></li>
+						<li><a href="#">自考报名</a></li>
+						<li><a href="#">点击领牛股</a></li>
+						<li><a href="#">小本投资</a></li>
+						<li><a href="#">投资助手</a></li>
+						<li><a href="#">装修攻略</a></li>
+						<li><a href="#">SUV测评</a></li>
+						<li><a href="#">双语教学</a></li>
+						<li><a href="">出境游</a></li>
+					</ul>
+				</div>
+				<div class="layout_3">
+					<span class="yulike"></span>
+					<div class="bottom_main">
+						<div class="guesslike">
+							<a href="#" class="guesslike_title theme_green">游戏</a>
+							<div class="guesslike_row">
+								<span>2017版传奇</span>
+								<span>一刀999999</span>
+								<span>变态999级</span>
+								<span>贪玩蓝月</span>
+								<span>传奇世界</span>
+								<span>传奇1.85</span>
+								<span>满地爆装备</span>
+								<span>梁山传奇</span>
+							</div>
+						</div>
+						<div class="guesslike">
+							<a href="#" class="guesslike_title theme_green">优选</a>
+							<div class="guesslike_row">
+								<span>7月牛股群</span>
+								<span>买卖二手车</span>
+								<span>超市低价抢</span>
+								<span>领7月妖股</span>
+								<span>时尚爸妈装</span>
+								<span>月瘦20斤</span>
+								<span>冷饮店加盟</span>
+								<span>月薪30K</span>
+							</div>
+						</div>
+						<div class="guesslike">
+							<a href="#" class="guesslike_title theme_green">生活</a>
+							<div class="guesslike_row">
+								<span>创业好生意</span>
+								<span>人人二手车</span>
+								<span>娇正牙要求</span>
+								<span>整牙的年龄</span>
+								<span>全隐形娇正</span>
+								<span>瓜子卖车</span>
+								<span>瓜子2手车</span>
+								<span>个人二手车</span>
+							</div>
+						</div>
+						<div class="guesslike">
+							<a href="#" class="guesslike_title theme_green">新热</a>
+							<div class="guesslike_row">
+								<span>沙滩裤</span>
+								<span>超值亲子游</span>
+								<span>烘焙学堂</span>
+								<span>达鞭妮促销</span>
+								<span>精装三居室</span>
+								<span>居家好物</span>
+								<span>OPPOR11</span>
+								<span>免手洗拖布</span>
+							</div>
+						</div>
+						<div class="guesslike">
+							<a href="#" class="guesslike_title theme_green">康健</a>
+							<div class="guesslike_row">
+								<span>隐形娇正</span>
+								<span>美奥牙种植</span>
+								<span>种植牙价格</span>
+								<span>多颗牙缺失</span>
+								<span>去除下眼袋</span>
+								<span>眼袋怎么去</span>
+								<span>缺牙种植牙</span>
+								<span>看牙选美奥</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--中间主体第四部分 begin-->
+				<div class="layout_4">
+					<!--导航-->
+					<div class="navigate">
+						<ul>
+							<li><a href="#" class="theme_green" name="themecls">电视剧</a></li>
+							<li><a href="" class="theme_green" name="themecls">电影</a></li>
+							<li><a href="" class="theme_green" name="themecls">新闻</a></li>
+							<li><a href="" class="theme_green" name="themecls">娱乐</a></li>
+							<li><a href="" class="theme_green" name="themecls">军事</a></li>
+							<li><a href="" class="theme_green" name="themecls">小游戏</a></li>
+							<li><a href="" class="theme_green" name="themecls">新游</a></li>
+							<li><a href="" class="theme_green" name="themecls">特价</a></li>
+							<li><a href="" class="theme_green" name="themecls">购物</a></li>
+							<li><a href="" class="theme_green" name="themecls">综艺</a></li>
+							<li><a href="" class="theme_green" name="themecls">软件</a></li>
+							<li><a href="" class="theme_green" name="themecls">理财</a></li>
+						</ul>
+					</div>
+					<!--导航-->
+					<div class="box_coolsite">
+						<!--推荐-->
+						<div class="coolsite_group">
+							<div class="coolsite_tuijian">
+								<h4 class="theme_green coolsite_name">推荐</h4>
+								<span>
+									<a href="http://www.hao123.com/licaishuju">教你理财</a>
+								</span>
+								<span>
+									<a href="http://www.hao123.com/love">同城交友</a>
+								</span>
+								<span>
+									<a href="http://www.fang.com">热门房源</a>
+								</span>
+								<span>
+									<a href="http://pan.baidu.com/">百度网盘</a>
+								</span>
+								<span>
+									<a href="http://life.hao123.com/menu">美食菜谱</a>
+								</span>
+								<span>
+									<a href="http://www.hao123.com/zhaopin">找工作</a>
+								</span>
+								<span>
+									<a href="http://www.hao123.com/haoda">答题送礼</a>
+								</span>
+								<span>
+									<span><a href="http://www.jschina.com.cn/">中国江苏</a></span>
+								</span>
+								<span class="coolsite-more-wrap">
+									<a class="g_more g_gray-red coolsite-more" href="http://tuijian.hao123.com/">更多&gt;&gt;</a>
+								</span>
+							</div>
+						</div>
+						<!--推荐-->
+						<!--视频-->
+						<div class="coolsite_group">
+							<div class="coolsite_tuijian">
+								<h4 class="theme_green coolsite_name">视频</h4>
+								<span>
+									<a href="http://www.iqiyi.com/">爱奇艺高清</a>
+								</span>
+								<span>
+									<a href="http://www.youku.com/">优酷网</a>
+								</span>
+								<span>
+									<a chref="http://v.baidu.com/">百度视频</a>
+								</span>
+								<span>
+									<a href="http://v.qq.com/">腾讯视频</a>
+								</span>
+								<span>
+									<a href="http://www.mgtv.com/">芒果TV</a>
+								</span>
+								<span>
+									<a href="http://v.hao123.com/">影视大全</a>
+								</span>
+								<span>
+									<a href="http://www.hao123.com/video/wangju">网络自制</a>
+								</span>
+								
+								<span class="coolsite-more-wrap">
+									<a class="g_more g_gray-red coolsite-more" href="http://tuijian.hao123.com/">更多&gt;&gt;</a>
+								</span>
+							</div>
+						</div>
+						<!--视频-->
+						<!--影视-->
+						<div class="coolsite_group">
+							<div class="coolsite_tuijian">
+								<h4 class="theme_green coolsite_name">影视
+									<img src="https://gss0.bdstatic.com/5bVWsj_p_tVS5dKfpU_Y_D3/res/r/image/2017-06-19/b5292b5912a79ab44ed32b4b9f76cb00.png">
+								</h4>
+								<span>
+									<a href="http://v.hao123.com/dianshi/">电视剧</a>
+								</span>
+								<span>
+									<a href="http://v.hao123.com/dianying/">电影</a> • <a class="sitelink sublink" href="http://life.hao123.com/?tn=kuzhan_movie&amp;searchTab=dianying">购票</a>
+									</span>
+								<span>
+									<a href="http://v.hao123.com/dongman/">动漫</a>
+								</span>
+								<span>
+									<a href="http://v.hao123.com/zongyi/">综艺</a>
+								</span>
+								<span>
+									<a href="http://live.hao123.com/">电视直播</a>
+								</span>
+								<span>
+									<a href="http://v.hao123.com/dianying_index/order-hot_pn-1_channel-movie">2017热映大片</a>
+								</span>
+								<span>
+									<a href="http://www.hao123.com/video/zixun">热点资讯</a>
+								</span>
+								
+								<span class="coolsite-more-wrap">
+									<a class="g_more g_gray-red coolsite-more" href="http://tuijian.hao123.com/">更多&gt;&gt;</a>
+								</span>
+							</div>
+						</div>
+						<!--影视 end-->
+						<!--游戏-->
+						<div class="coolsite_group">
+							<div class="coolsite_tuijian">
+								<h4 class="theme_green coolsite_name">游戏</h4>
+								<span>
+									<a href="http://www.4399.com/">4399游戏</a>
+								</span>
+								<span>
+									<a href="http://www.youku.com/">7k7k游戏</a>
+								</span>
+								<span>
+									<a href="http://v.baidu.com/">17173游戏</a>
+								</span>
+								<span>
+									<a href="http://v.baidu.com/">37游戏</a>
+								</span>
+								<span>
+									<a href="http://v.baidu.com/">游侠网</a>
+								</span>
+								<span>
+									<a href="http://v.baidu.com/">LOL直播</a>
+								</span>
+								<span>
+									<a href="http://v.baidu.com/">hao123游戏</a> • <a href="http://v.baidu.com/">小游戏</a>
+								</span>
+								
+								<span class="coolsite-more-wrap">
+									<a class="g_more g_gray-red coolsite-more" href="http://tuijian.hao123.com/">更多&gt;&gt;</a>
+								</span>
+							</div>
+						</div>
+						<!--游戏 end-->
+						<!--新闻-->
+						<div class="coolsite_group">
+							<div class="coolsite_tuijian">
+								<h4 class="theme_green coolsite_name">新闻</h4>
+								<span>
+									<a href="http://news.sina.com.cn/">新浪新闻</a>
+								</span>
+								<span>
+									<a href="http://mini.qq.com/">腾讯新闻</a>
+								</span>
+								<span>
+									<a href="http://news.baidu.com/">百度新闻</a>
+								</span>
+								<span>
+									<a href="http://news.sohu.com/">搜狐新闻</a>
+								</span>
+								<span>
+									<a href="http://news.163.com/">网易新闻</a>
+								</span>
+								<span>
+									<a href="http://www.thepaper.cn/">澎湃新闻</a>
+								</span>
+								<span>
+									<a href="http://www.huanqiu.com/">环球网</a>
+								</span>
+								
+								<span class="coolsite-more-wrap">
+									<a class="g_more g_gray-red coolsite-more" href="http://tuijian.hao123.com/">更多&gt;&gt;</a>
+								</span>
+							</div>
+						</div>
+						<!--新闻 end-->
+						<!--小说-->
+						<div class="coolsite_group">
+							<div class="coolsite_tuijian">
+								<h4 class="theme_green coolsite_name">小说</h4>
+								<span>
+									<a href="http://www.qidian.com/">起点中文网</a>
+								</span>
+								<span>
+									<a href="http://www.xxsy.net/">潇湘书院</a>
+								</span>
+								<span>
+									<a href="http://b.faloo.com">飞卢小说网</a>
+								</span>
+								<span>
+									<a href="http://book.hao123.com/rank.html">小说排行</a>
+								</span>
+								<span>
+									<a href="http://book.hao123.com/store/c0/w0/s0/p1/all.html">热门小说</a>
+								</span>
+								<span>
+									<a href="http://www.readnovel.com/">小说阅读网</a>
+								</span>
+								<span>
+									<a href="http://www.xs8.cn/">言情小说吧</a>
+								</span>
+								
+								<span class="coolsite-more-wrap">
+									<a class="g_more g_gray-red coolsite-more" href="http://tuijian.hao123.com/">更多&gt;&gt;</a>
+								</span>
+							</div>
+						</div>
+						<!--小说 end-->
+					</div>
+				</div>
+				<!--中间主体第四部分 end-->
+			</div>
+			<!--主体中间部分 end-->
+
+
+		</div>
+		<!---->
+	</div>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
