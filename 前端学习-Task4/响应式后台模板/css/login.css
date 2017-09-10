@@ -1,0 +1,72 @@
+ html,
+ body {
+     height: 100%;
+ }
+ 
+ body {
+     background: #000 url(../images/carbon_fibre_big.png);
+     background-size: inherit;
+     font: 400 12px/1.4 Verdana, "Lantinghei SC", "Hiragino Sans GB", 'Microsoft YaHei', Helvetica, arial, simsun, sans-serif;
+ }
+ /*头部设置外边距*/
+ 
+ #header {
+     margin-top: 15px;
+ }
+ /*Logo图片尺寸*/
+ 
+ .logo img {
+     width: 150px;
+     height: 55px;
+ }
+ /*登录form*/
+ 
+ .login-box {
+     margin-top: 50px;
+     border: 1px solid #fff;
+     border-radius: 7px;
+ }
+ /*登录框内标题*/
+ 
+ .loginInfo {
+     padding: 20px 20px 20px;
+     color: #fff;
+ }
+ 
+ form {
+     margin: 20px;
+ }
+ 
+ label {
+     color: #fff;
+ }
+ 
+ .divide-5 {
+     height: 5px;
+ }
+ 
+ .divide-20 {
+     height: 20px;
+ }
+ 
+ .login-helpers {
+     text-align: right;
+ }
+ /*底部footer*/
+ 
+ footer {
+     height: 40px;
+     text-align: center;
+     position: fixed;
+     bottom: 0;
+ }
+ 
+ .divfooter {
+     text-align: center;
+     color: #7e7e7e;
+ }
+ 
+ #lbRemenber {
+     font-size: 12px;
+     cursor: pointer;
+ }

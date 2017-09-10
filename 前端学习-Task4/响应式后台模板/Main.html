@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- 开始 头部文件,这里我采用了一直以来个人比较喜欢的bootstrap模板(metro)-->
+
+<head>
+    <meta charset="utf-8" />
+    <title>后台管理系统</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <!-- 引入bootstrap样式表 -->
+    <link href="media/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="media/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <link href="media/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="media/css/style-metro.css" rel="stylesheet" type="text/css" />
+    <link href="media/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="media/css/style-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="media/css/default.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="media/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <!--引入自定义样式表-->
+    <link rel="stylesheet" href="css/Main.css">
+</head>
+<!-- 结束 头部文件-->
+<!-- 开始 主体Body部分 -->
+
+<body class="page-header-fixed">
+    <!-- 开始头部导航部分这里只显示一个公司logo以及一个右侧个人管理菜单 -->
+    <div class="header navbar navbar-inverse navbar-fixed-top">
+        <!-- 左侧logo -->
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <!-- LOGO -->
+                <a class="brand" href="#" id="c_logo">
+                    管理系统
+                </a>
+                <!-- END LOGO -->
+                <!-- 响应式菜单导航按纽 -->
+                <a href="javascript:;" class="btn-navbar collapsed" data-toggle="collapse" data-target=".nav-collapse">
+                    <img src="media/image/menu-toggler.png" alt="" />
+                </a>
+                <!-- 结束响应式菜单导航按纽 -->
+                <!-- 顶部右侧个人信息管理菜单 -->
+                <ul class="nav pull-right">
+                    <!-- 用户退出/个人管理菜单 -->
+                    <li class="dropdown user">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img alt="" src="media/image/avatar1_small.jpg">
+                            <span class="username">管理员</span>
+                            <i class="icon-angle-down"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="icon-user"></i> 个人资料</a></li>
+                            <li><a href="#"><i class="icon-envelope"></i> 我的信息</a></li>
+                            <li><a href="login.html"><i class="icon-key"></i> 退出</a></li>
+                        </ul>
+                    </li>
+                    <!-- 结束用户退出/个人管理菜单 -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 结束头部导航部分-->
+    <!-- 开始主体内容部分 -->
+    <div class="page-container row-fluid">
+        <!-- 左侧菜单栏 -->
+        <div class="page-sidebar nav-collapse collapse">
+            <!-- 侧边菜单 -->
+            <ul class="page-sidebar-menu">
+                <li>
+                    <div class="sidebar-toggler hidden-phone"></div>
+                </li>
+                <li>
+                    <!-- 快速查询 FORM -->
+                    <form class="sidebar-search">
+                        <div class="input-box">
+                            <a href="javascript:;" class="remove"></a>
+                            <input type="text" placeholder="Search...">
+                            <input type="button" class="submit" value=" ">
+                        </div>
+                    </form>
+                    <!-- 结束快速查询 FORM -->
+                </li>
+                <li class="active ">
+                    <a href="#">
+                        <i class="icon-home"></i>
+                        <span class="title">首页</span>
+                        <span class="selected"></span>
+                        <span class="open"></span>
+                    </a>
+                </li>
+                <li class="start ">
+                    <a href="#">
+                        <i class="icon-cogs"></i>
+                        <span class="title">教务管理</span>
+                        <span class="selected"></span>
+                        <span class="arrow open"></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="#">班级管理</a>
+                        </li>
+                        <li>
+                            <a href="#">招生管理</a>
+                        </li>
+                        <li>
+                            <a href="#">学员管理</a>
+                        </li>
+                        <li>
+                            <a href="#">假期管理</a>
+                        </li>
+                        <li>
+                            <a href="#">直播管理</a>
+                        </li>
+                        <li>
+                            <a href="#">公告</a>
+                        </li>
+                        <li>
+                            <a href="#">常见问题</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- 结束左侧菜单栏 -->
+        <!-- 右侧内容部分 -->
+        <div class="page-content">
+            <!-- 开始右侧内容部分-->
+            <div class="container-fluid">
+        	<!-- 右侧内容部分头部-->
+                <div class="row-fluid">
+                    <div class="span12">
+                        <!-- 根据业务需要可去除-->
+                        <h3 class="page-title">
+							<i class="icon-home"></i>
+							首页 <small>Portal</small>
+						</h3>
+                    </div>
+                </div>
+                <!-- 右侧内容部分头部-->
+                <!-- 开始内容主体部分-->
+                <div class="row-fluid">
+                    <div class="span12">
+                        <div class="alert alert-success">
+                            <button class="close" data-dismiss="alert"></button>
+                            这个bootstrap后台模板是我一直喜欢的，带windows风格．这个模板顶部是固定的.
+                            <br>
+                            <span class="label label-important">NOTE:</span>&nbsp;由于这期任务学到了bootstrap,且做这个作业是可以结合外部掌握的知识自由发挥，所以采用此Metro风格来完成这个作业
+                            <br/> 下面是演示了一个后台管理系统中不可缺少的表格数据显示,这个后台管理功能只完成模拟用户帐号登陆以及右上方的用户模拟注销处理
+                        </div>
+                        <!--这里展示表格一-->
+                        <div class="portlet box green">
+                            <div class="portlet-title">
+                                <div class="caption"><i class="icon-cogs"></i>数据表格一</div>
+                                <div class="tools">
+                                    <a href="javascript:;" class="collapse"></a>
+                                    <a href="#portlet-config" data-toggle="modal" class="config"></a>
+                                    <a href="javascript:;" class="reload"></a>
+                                    <a href="javascript:;" class="remove"></a>
+                                </div>
+                            </div>
+                            <div class="portlet-body flip-scroll">
+                                <table class="table-bordered table-striped table-condensed flip-content">
+                                    <thead class="flip-content">
+                                        <tr>
+                                            <th>Code</th>
+                                            <th>Company</th>
+                                            <th class="numeric">Price</th>
+                                            <th class="numeric">Change</th>
+                                            <th class="numeric">Change %</th>
+                                            <th class="numeric">Open</th>
+                                            <th class="numeric">High</th>
+                                            <th class="numeric">Low</th>
+                                            <th class="numeric">Volume</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>AAC</td>
+                                            <td>AUSTRALIAN AGRICULTURAL COMPANY LIMITED.</td>
+                                            <td class="numeric">$1.38</td>
+                                            <td class="numeric">-0.01</td>
+                                            <td class="numeric">-0.36%</td>
+                                            <td class="numeric">$1.39</td>
+                                            <td class="numeric">$1.39</td>
+                                            <td class="numeric">$1.38</td>
+                                            <td class="numeric">9,395</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AAD</td>
+                                            <td>ARDENT LEISURE GROUP</td>
+                                            <td class="numeric">$1.15</td>
+                                            <td class="numeric"> +0.02</td>
+                                            <td class="numeric">1.32%</td>
+                                            <td class="numeric">$1.14</td>
+                                            <td class="numeric">$1.15</td>
+                                            <td class="numeric">$1.13</td>
+                                            <td class="numeric">56,431</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AAX</td>
+                                            <td>AUSENCO LIMITED</td>
+                                            <td class="numeric">$4.00</td>
+                                            <td class="numeric">-0.04</td>
+                                            <td class="numeric">-0.99%</td>
+                                            <td class="numeric">$4.01</td>
+                                            <td class="numeric">$4.05</td>
+                                            <td class="numeric">$4.00</td>
+                                            <td class="numeric">90,641</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ABC</td>
+                                            <td>ADELAIDE BRIGHTON LIMITED</td>
+                                            <td class="numeric">$3.00</td>
+                                            <td class="numeric"> +0.06</td>
+                                            <td class="numeric">2.04%</td>
+                                            <td class="numeric">$2.98</td>
+                                            <td class="numeric">$3.00</td>
+                                            <td class="numeric">$2.96</td>
+                                            <td class="numeric">862,518</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ABP</td>
+                                            <td>ABACUS PROPERTY GROUP</td>
+                                            <td class="numeric">$1.91</td>
+                                            <td class="numeric">0.00</td>
+                                            <td class="numeric">0.00%</td>
+                                            <td class="numeric">$1.92</td>
+                                            <td class="numeric">$1.93</td>
+                                            <td class="numeric">$1.90</td>
+                                            <td class="numeric">595,701</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ABY</td>
+                                            <td>ADITYA BIRLA MINERALS LIMITED</td>
+                                            <td class="numeric">$0.77</td>
+                                            <td class="numeric"> +0.02</td>
+                                            <td class="numeric">2.00%</td>
+                                            <td class="numeric">$0.76</td>
+                                            <td class="numeric">$0.77</td>
+                                            <td class="numeric">$0.76</td>
+                                            <td class="numeric">54,567</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ACR</td>
+                                            <td>ACRUX LIMITED</td>
+                                            <td class="numeric">$3.71</td>
+                                            <td class="numeric"> +0.01</td>
+                                            <td class="numeric">0.14%</td>
+                                            <td class="numeric">$3.70</td>
+                                            <td class="numeric">$3.72</td>
+                                            <td class="numeric">$3.68</td>
+                                            <td class="numeric">191,373</td>
+                                        </tr>
+                                        <tr>
+                                            <td>ADU</td>
+                                            <td>ADAMUS RESOURCES LIMITED</td>
+                                            <td class="numeric">$0.72</td>
+                                            <td class="numeric">0.00</td>
+                                            <td class="numeric">0.00%</td>
+                                            <td class="numeric">$0.73</td>
+                                            <td class="numeric">$0.74</td>
+                                            <td class="numeric">$0.72</td>
+                                            <td class="numeric">8,602,291</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AGG</td>
+                                            <td>ANGLOGOLD ASHANTI LIMITED</td>
+                                            <td class="numeric">$7.81</td>
+                                            <td class="numeric">-0.22</td>
+                                            <td class="numeric">-2.74%</td>
+                                            <td class="numeric">$7.82</td>
+                                            <td class="numeric">$7.82</td>
+                                            <td class="numeric">$7.81</td>
+                                            <td class="numeric">148</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AGK</td>
+                                            <td>AGL ENERGY LIMITED</td>
+                                            <td class="numeric">$13.82</td>
+                                            <td class="numeric"> +0.02</td>
+                                            <td class="numeric">0.14%</td>
+                                            <td class="numeric">$13.83</td>
+                                            <td class="numeric">$13.83</td>
+                                            <td class="numeric">$13.67</td>
+                                            <td class="numeric">846,403</td>
+                                        </tr>
+                                        <tr>
+                                            <td>AGO</td>
+                                            <td>ATLAS IRON LIMITED</td>
+                                            <td class="numeric">$3.17</td>
+                                            <td class="numeric">-0.02</td>
+                                            <td class="numeric">-0.47%</td>
+                                            <td class="numeric">$3.11</td>
+                                            <td class="numeric">$3.22</td>
+                                            <td class="numeric">$3.10</td>
+                                            <td class="numeric">5,416,303</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <!--这里展示表格二-->
+                        <div class="portlet box blue">
+                            <div class="portlet-title">
+                                <div class="caption"><i class="icon-cogs"></i>数据表格二</div>
+                                <div class="tools">
+                                    <a href="javascript:;" class="collapse"></a>
+                                    <a href="#portlet-config" data-toggle="modal" class="config"></a>
+                                    <a href="javascript:;" class="reload"></a>
+                                    <a href="javascript:;" class="remove"></a>
+                                </div>
+                            </div>
+                            <div class="portlet-body no-more-tables">
+                                <table class="table-bordered table-striped table-condensed cf">
+                                    <thead class="cf">
+                                        <tr>
+                                            <th>Code</th>
+                                            <th>Company</th>
+                                            <th class="numeric">Price</th>
+                                            <th class="numeric">Change</th>
+                                            <th class="numeric">Change %</th>
+                                            <th class="numeric">Open</th>
+                                            <th class="numeric">High</th>
+                                            <th class="numeric">Low</th>
+                                            <th class="numeric">Volume</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td data-title="Code">AAC</td>
+                                            <td data-title="Company">AUSTRALIAN AGRICULTURAL COMPANY LIMITED.</td>
+                                            <td data-title="Price" class="numeric">$1.38</td>
+                                            <td data-title="Change" class="numeric">-0.01</td>
+                                            <td data-title="Change %" class="numeric">-0.36%</td>
+                                            <td data-title="Open" class="numeric">$1.39</td>
+                                            <td data-title="High" class="numeric">$1.39</td>
+                                            <td data-title="Low" class="numeric">$1.38</td>
+                                            <td data-title="Volume" class="numeric">9,395</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Code">AAD</td>
+                                            <td data-title="Company">ARDENT LEISURE GROUP</td>
+                                            <td data-title="Price" class="numeric">$1.15</td>
+                                            <td data-title="Change" class="numeric"> +0.02</td>
+                                            <td data-title="Change %" class="numeric">1.32%</td>
+                                            <td data-title="Open" class="numeric">$1.14</td>
+                                            <td data-title="High" class="numeric">$1.15</td>
+                                            <td data-title="Low" class="numeric">$1.13</td>
+                                            <td data-title="Volume" class="numeric">56,431</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Code">AAX</td>
+                                            <td data-title="Company">AUSENCO LIMITED</td>
+                                            <td data-title="Price" class="numeric">$4.00</td>
+                                            <td data-title="Change" class="numeric">-0.04</td>
+                                            <td data-title="Change %" class="numeric">-0.99%</td>
+                                            <td data-title="Open" class="numeric">$4.01</td>
+                                            <td data-title="High" class="numeric">$4.05</td>
+                                            <td data-title="Low" class="numeric">$4.00</td>
+                                            <td data-title="Volume" class="numeric">90,641</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Code">ABC</td>
+                                            <td data-title="Company">ADELAIDE BRIGHTON LIMITED</td>
+                                            <td data-title="Price" class="numeric">$3.00</td>
+                                            <td data-title="Change" class="numeric"> +0.06</td>
+                                            <td data-title="Change %" class="numeric">2.04%</td>
+                                            <td data-title="Open" class="numeric">$2.98</td>
+                                            <td data-title="High" class="numeric">$3.00</td>
+                                            <td data-title="Low" class="numeric">$2.96</td>
+                                            <td data-title="Volume" class="numeric">862,518</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Code">ABP</td>
+                                            <td data-title="Company">ABACUS PROPERTY GROUP</td>
+                                            <td data-title="Price" class="numeric">$1.91</td>
+                                            <td data-title="Change" class="numeric">0.00</td>
+                                            <td data-title="Change %" class="numeric">0.00%</td>
+                                            <td data-title="Open" class="numeric">$1.92</td>
+                                            <td data-title="High" class="numeric">$1.93</td>
+                                            <td data-title="Low" class="numeric">$1.90</td>
+                                            <td data-title="Volume" class="numeric">595,701</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Code">ABY</td>
+                                            <td data-title="Company">ADITYA BIRLA MINERALS LIMITED</td>
+                                            <td data-title="Price" class="numeric">$0.77</td>
+                                            <td data-title="Change" class="numeric"> +0.02</td>
+                                            <td data-title="Change %" class="numeric">2.00%</td>
+                                            <td data-title="Open" class="numeric">$0.76</td>
+                                            <td data-title="High" class="numeric">$0.77</td>
+                                            <td data-title="Low" class="numeric">$0.76</td>
+                                            <td data-title="Volume" class="numeric">54,567</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Code">ACR</td>
+                                            <td data-title="Company">ACRUX LIMITED</td>
+                                            <td data-title="Price" class="numeric">$3.71</td>
+                                            <td data-title="Change" class="numeric"> +0.01</td>
+                                            <td data-title="Change %" class="numeric">0.14%</td>
+                                            <td data-title="Open" class="numeric">$3.70</td>
+                                            <td data-title="High" class="numeric">$3.72</td>
+                                            <td data-title="Low" class="numeric">$3.68</td>
+                                            <td data-title="Volume" class="numeric">191,373</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Code">ADU</td>
+                                            <td data-title="Company">ADAMUS RESOURCES LIMITED</td>
+                                            <td data-title="Price" class="numeric">$0.72</td>
+                                            <td data-title="Change" class="numeric">0.00</td>
+                                            <td data-title="Change %" class="numeric">0.00%</td>
+                                            <td data-title="Open" class="numeric">$0.73</td>
+                                            <td data-title="High" class="numeric">$0.74</td>
+                                            <td data-title="Low" class="numeric">$0.72</td>
+                                            <td data-title="Volume" class="numeric">8,602,291</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Code">AGG</td>
+                                            <td data-title="Company">ANGLOGOLD ASHANTI LIMITED</td>
+                                            <td data-title="Price" class="numeric">$7.81</td>
+                                            <td data-title="Change" class="numeric">-0.22</td>
+                                            <td data-title="Change %" class="numeric">-2.74%</td>
+                                            <td data-title="Open" class="numeric">$7.82</td>
+                                            <td data-title="High" class="numeric">$7.82</td>
+                                            <td data-title="Low" class="numeric">$7.81</td>
+                                            <td data-title="Volume" class="numeric">148</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Code">AGK</td>
+                                            <td data-title="Company">AGL ENERGY LIMITED</td>
+                                            <td data-title="Price" class="numeric">$13.82</td>
+                                            <td data-title="Change" class="numeric"> +0.02</td>
+                                            <td data-title="Change %" class="numeric">0.14%</td>
+                                            <td data-title="Open" class="numeric">$13.83</td>
+                                            <td data-title="High" class="numeric">$13.83</td>
+                                            <td data-title="Low" class="numeric">$13.67</td>
+                                            <td data-title="Volume" class="numeric">846,403</td>
+                                        </tr>
+                                        <tr>
+                                            <td data-title="Code">AGO</td>
+                                            <td data-title="Company">ATLAS IRON LIMITED</td>
+                                            <td data-title="Price" class="numeric">$3.17</td>
+                                            <td data-title="Change" class="numeric">-0.02</td>
+                                            <td data-title="Change %" class="numeric">-0.47%</td>
+                                            <td data-title="Open" class="numeric">$3.11</td>
+                                            <td data-title="High" class="numeric">$3.22</td>
+                                            <td data-title="Low" class="numeric">$3.10</td>
+                                            <td data-title="Volume" class="numeric">5,416,303</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 结束开始内容主体部分-->
+            </div>
+           
+        </div>
+    </div>
+    <!-- 结束主体内容部分 -->
+    
+    <!-- 加载js脚本(尽量将js的加载放在页面底部这样减少页面加载时间) -->
+
+    <script src="media/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="media/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+  
+    <script src="media/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+    <script src="media/js/bootstrap.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+
+	<script src="media/js/excanvas.min.js"></script>
+
+	<script src="media/js/respond.min.js"></script>  
+
+	<![endif]-->
+    <script src="media/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+    <script src="media/js/jquery.blockui.min.js" type="text/javascript"></script>
+    <script src="media/js/jquery.cookie.min.js" type="text/javascript"></script>
+    <script src="media/js/jquery.uniform.min.js" type="text/javascript"></script>
+ 
+    <script src="media/js/app.js"></script>
+    <script>
+    jQuery(document).ready(function() {
+
+        App.init();
+
+    });
+    </script>
+    <!-- 结束脚本 -->
+</body>
+<!-- 结束BODY部分 -->
+
+</html>

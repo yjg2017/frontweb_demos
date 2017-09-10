@@ -1,0 +1,120 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+img,
+u,
+i {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 12px;
+    background-color: transparent;
+    font-family: "微软雅黑";
+}
+#wrap{
+    background: #F5F5F5;
+    min-width: 1000px;
+}
+#header img,
+#header ul,
+#header nav,
+#header div,
+#header span,
+#header a,
+#header i,
+#header h3{
+	vertical-align: middle;
+
+	font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.w-1000 {
+    width: 1000px;
+    margin: 0 auto;
+    clear: both;
+}
+.mar-t10{
+    margin-top: 10px;
+}
+.mar-t20{
+    margin-top: 20px;
+}
+.cf{
+
+}
+
+#header{
+    
+}
+#container{
+    /*width: 1000px;*/
+    /*height: 90%;*/
+    /*margin: 0 auto;*/
+    /*border: 1px solid #999;*/
+    margin-top: 20px;
+}
+#footer{
+    /*min-width: 1000px;*/
+    height: 300px;
+    border-top: 1px solid #e4e4e4;
+    background: #fff;
+}
+/*极客学院按纽*/
+.jk-btn {
+    line-height: 30px;
+    border: 1px solid #35b558;
+    border-radius: 2px;
+    font-size: 14px;
+    color: #35b558;
+    text-align: center;
+}
+.jk-btn:hover{
+    background-color: #35b558;
+    color: #fff;
+    transition: background-color .8s;
+    -webkit-transition: background-color .8s;
+    -ms-transition: background-color .8s;
+    -moz-transition: background-color .8s;
+    -o-transition: background-color .8s;
+}
+/*极客学院按纽 end*/
+
+/*自定义h2字体*/
+.jk-college h2,
+.jk-vip h2,
+.jk-partner h2 {
+    font-size: 18px;
+    color: #555;
+    font-weight: 400;
+    height: 18px;
+    line-height: 18px;
+}
+/*自定义h2字体 end*/

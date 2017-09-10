@@ -1,0 +1,563 @@
+/*隐藏大屏幕下的元素*/
+
+.wrapper {
+    display: none;
+}
+
+
+/*隐藏大屏幕下的元素 end*/
+
+body,
+h1,
+h2,
+h3,
+p,
+div,
+ol,
+ul,
+input,
+button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    /*background: #f1f1f1;*/
+    max-width: 100%;
+    overflow-x: hidden;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input,
+button,
+textarea {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    -webkit-appearance: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#page {
+    background: #f8f8f8;
+}
+
+.index-card {
+    position: relative;
+    height: inherit;
+}
+
+
+/*右侧用户登录*/
+
+#header .userinfo-wrap {
+    position: relative;
+    height: 35px;
+    margin-bottom: 9px;
+}
+
+#login {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    width: 25px;
+    height: 25px;
+    background: url(../images/usr.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+
+/*右侧用户登录 end*/
+
+
+/*中间 & logo*/
+
+#logo {
+    height: 57px;
+    padding-bottom: 17px;
+}
+
+#logo img {
+    height: 100%;
+    max-width: 217px;
+}
+/*搜索form*/
+#index-form {
+    margin: 0 16px;
+    height: 45px;
+    background: #fff;
+    borer: 1px solid #d2d2d2;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, .03);
+    border-radius: 2px;
+}
+
+#index-form .con-wrap {
+    display: -webkit-box;
+    width: 100%;
+    position: relative;
+}
+
+/*搜索框*/
+.index-card .se-input,
+.index-card .se-encode {
+    display: block;
+    -moz-box-flex: 1;
+    -webkit-box-flex: 1;
+    margin: 2px 0;
+    padding: 6px 35px 6px 6px;
+    font-size: 18px;
+    line-height: 24px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.index-card .se-input {
+    border-radius: 0;
+    margin: 0;
+    padding: 7px 42px 7px 6px;
+    height: 45px;
+    line-height: 28px;
+    resize: none;
+    border: 1px solid #d2d2d2;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.index-card .se-inner {
+    width: 82px;
+    position: relative;
+}
+/*搜索按纽*/
+.se-btn {
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    outline: 0;
+    width: 82px;
+    height: 44px;
+    background: #38f;
+    color: #fff;
+    white-space: nowrap;
+    line-height: 45px;
+    letter-spacing: -1px;
+    font-size: 16px;
+    border-top: 1px solid #38f;
+    border-bottom: 1px solid #38f;
+    box-sizing: inherit;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    text-shadow: none;
+}
+
+
+/*中间 & logo end*/
+
+
+/*概要导航*/
+
+#navs {
+    width: 100%;
+    overflow: hidden;
+}
+
+#ns-swipe {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding-top: 19px;
+}
+
+
+/*概要导航 end*/
+
+.ns-swipe .ns-swipe-wrap {
+    overflow: hidden;
+    position: relative;
+    height: 43px;
+}
+
+.ns-swipe .ns-swipe-wrap .ns-swipe-item {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    float: left;
+    width: 100%;
+    position: relative;
+    padding: 0 23px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.ns-item {
+    width: 28px;
+    text-decoration: none;
+}
+
+.ns-item .ns-text {
+    display: block;
+    height: 13px;
+    text-align: center;
+    padding-top: 15px;
+    font-size: 13px;
+    line-height: 1px;
+    color: #999;
+}
+/*概要导航图片位置及大小设置*/
+i.ns-focus,
+i.ns-news,
+i.ns-novel,
+i.ns-video,
+i.ns-life,
+i.ns-map,
+i.ns-tieba,
+i.ns-app,
+i.ns-image,
+i.ns-website,
+i.ns-extend,
+i.ns-music {
+    background: url(../images/ns_diff_color_v2.png) no-repeat;
+    background-size: 22px auto;
+}
+
+i.ns-focus {
+    background-position: 0 -264px;
+}
+
+i.ns-news {
+    background-position: 0 -396px;
+}
+
+i.ns-novel {
+    background-position: 0 -330px;
+}
+
+i.ns-video {
+    background-position: 0 -462px;
+}
+
+i.ns-life {
+    background-position: 0 -418px;
+}
+
+i.ns-map {
+    background-position: 0 -308px;
+}
+
+.ns-item .ns-icon {
+    display: block;
+    width: 22px;
+    height: 22px;
+    margin: 0 auto;
+}
+
+
+/*tab导航下方不起眼的小圆点*/
+
+.ns-swipe-menu {
+    padding: 0;
+    margin-top: 17px;
+    margin-bottom: 8px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    justify-content: center;
+}
+
+.ns-swipe-menu .ns-swipe-tab {
+    width: 4px;
+    height: 4px;
+    margin-right: 3px;
+    background: #e0e0e0;
+    border-radius: 50%;
+}
+
+.ns-swipe-menu .ns-swipe-tab-active {
+    background: #999;
+}
+
+
+/*新闻部分*/
+
+.tab_news {
+    text-align: left;
+    background: #fff;
+}
+
+.tab-news-content {
+    background: #fff;
+}
+
+.news-list-wrapper {
+    overflow-x: hidden;
+}
+
+.tab-news-content .news-item .text-content {
+    margin-bottom: 3px;
+}
+
+.tab-news-content .tpl-3 a.inner-item {
+    min-height: 118px;
+    text-decoration: none;
+}
+
+.tab-news-content .news-item .inner-item {
+    margin: 0 16px;
+    padding: 10px 0 13px;
+    display: block;
+}
+
+.tab-news-content .tpl-3 a.text-content h2 {
+    -webkit-line-clamp: 2;
+}
+
+.tab-news-content .news-item .news-from {
+    margin-top: 9px;
+    line-height: 12px;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+}
+
+.tab-news-content .news-item .news-from span {
+    margin-right: 8px;
+    font-size: 13px;
+    color: #999;
+    display: inline-block;
+}
+
+.tab-news-content .news-item .news-from .src-icon-hot {
+    color: #f13f40;
+    border: 1px solid #efb9b9;
+    box-sizing: border-box;
+    padding: 1px 2px 0 2px;
+    border-radius: 2px;
+    margin-bottom: 1px;
+}
+
+
+/*新闻标题*/
+
+.tab-news-content .news-item h2 {
+    font-weight: normal;
+    color: #333;
+    font-size: 18px;
+    line-height: 26px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    text-decoration: none;
+}
+
+
+/*新闻图片*/
+
+
+.pic-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.pic-content .img-wrap {
+    flex-grow: 1;
+    margin-right: 1px;
+}
+
+.pic-content .img-wrap img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*新闻部分 end*/
+
+
+/*新闻视频部分*/
+
+.tab-news-content .tpl-2 .inner-item {
+    position: relative;
+    padding: 14px 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.tab-news-content .news-item .inner-item {
+    margin: 0 16px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.tab-news-content .tpl-2 .info-content {
+    width: 67.88%;
+    -webkit-box-ordinal-group: 2;
+    -moz-box-ordinal-group: 2;
+    -ms-box-ordinal-group: 2;
+    -webkit-order: 2;
+    order: 2;
+}
+
+.tab-news-content .tpl-2 .info-content > div {
+    margin-left: 14px;
+}
+
+.tab-news-content .news-item .text-content {
+    margin-bottom: 3px;
+}
+
+.tab-news-content .tpl-2 .pic-content {
+    width: 33.65%;
+    position: relative;
+}
+
+.tab-news-content .tpl-2 .pic-content div {
+    width: 100%;
+    padding-top: 66.67%;
+}
+
+.tab-news-content .tpl-2 .pic-content img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tab-news-content .icon-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 0 -16px;
+    background: url(../images/play.png) no-repeat;
+    background-size: 100%;
+}
+
+.tab-news-content .time-length {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    text-align: right;
+    padding: 0 7px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    height: 19px;
+    line-height: 19px;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
+    background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
+    background-image: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
+    background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .8));
+}
+
+.tab-news-content .tpl-video .news-from {
+    position: relative;
+}
+
+.tab-news-content .tpl-video .news-from i {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1;
+    /*margin-bottom: 5px;*/
+    transform: rotate(-224deg);
+}
+
+.tab-news-content .tpl-video .news-from .sort-name {
+    color: #38f !important;
+    position: absolute;
+    right: 10px;
+    top: -7px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+
+/*新闻视频部分 end*/
+
+
+/*footer底部*/
+
+.footer {
+    margin: 10px 28px 0;
+}
+
+.footer div {
+    text-align: center;
+}
+
+.footer div a {
+    position: relative;
+    display: inline-block;
+    height: 34px;
+    width: 95px;
+    font-size: 13px;
+    line-height: 34px;
+    color: #666;
+    text-decoration: none;
+}
+
+.footer div a .icon-feedback {
+    position: absolute;
+    top: 8px;
+    left: 0;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(../images/icon-feedback.png) no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.footer .copyright,
+.recordcode {
+    display: block;
+    font-size: 12px;
+    height: 20px;
+    line-height: 20px;
+    padding: 6px 0 0;
+    color: #999;
+    text-decoration: none;
+}
+
+.recordcode {
+    height: 12px;
+    line-height: 12px;
+    padding: 6px 0 20px;
+}
+
+.recordcode i {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(../images/icon_police.png) no-repeat;
+    background-size: 100% 100%;
+    margin-right: 5px;
+    vertical-align: top;
+}
+
+
+/*footer底部 end*/

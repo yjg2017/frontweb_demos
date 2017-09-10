@@ -1,0 +1,478 @@
+/*头部Logo区域*/
+
+.header {
+    background: #fff;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ececec;
+}
+
+.header .logo {
+    width: 109px;
+    height: 60px;
+    float: left;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.header .logo img {
+    width: 109px;
+    margin-top: 10px;
+}
+
+
+/*头部Logo区域 End*/
+
+
+/*头部导航区域*/
+
+.header nav {
+    height: 60px;
+    float: left;
+    display: inline-block;
+}
+
+.header nav a {
+    color: #333;
+}
+
+.header nav li:hover {
+    color: #35b558;
+}
+
+.header nav li a:hover {
+    color: #35b558;
+}
+
+.header nav li {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    height: 60px;
+    cursor: pointer;
+    margin-right: 50px;
+    float: left;
+}
+
+.header nav .header-nav .active {
+    color: #35b558;
+}
+
+.header nav li:hover .submenu {
+    display: block;
+    opacity: 1;
+    animation: myfirst 0.8s ease normal;
+}
+
+@keyframes myfirst {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+/*头部导航二级菜单及icon设置*/
+
+.header nav li .arrow-icon {
+    margin-bottom: 2px;
+}
+
+.header nav .header-nav .arrow-icon {
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1;
+    display: inline-block;
+    transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    transform-origin: 4px 4px;
+    -ms-transform-origin: 4px 4px;
+    -webkit-transform-origin: 4px 4px;
+    -o-transform-origin: 4px 4px;
+    -moz-transform-origin: 4px 4px;
+}
+
+.header nav .submenu {
+    position: absolute;
+    z-index: 1000;
+    top: 60px;
+    left: 0;
+    background: #fff;
+    /*font-size: 12px;*/
+    color: #666;
+    width: 280px;
+    display: none;
+    opacity: 0;
+}
+
+.header nav .submenu h3 {
+    margin: 10px 0;
+    padding: 0 15px;
+    background: #fafafa;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.header nav .submenu a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 15px;
+    font-size: 12px;
+    color: #555;
+    white-space: normal;
+}
+
+.school-list i,
+.vip-lession i {
+    background: url(../images/allicon.png) no-repeat 0 0;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    margin-right: 10px!important;
+    background-size: 64px;
+}
+
+.school-list i.webchat-icon,
+.school-list i.go-icon,
+.school-list i.python-icon,
+.school-list i.ios-icon {
+    background: url(../images/allicon4.png) no-repeat 0 0;
+    background-position: 0px 0px;
+    background-size: 16px 148px;
+}
+
+.school-list .web-icon {
+    background-position: -13px -27px;
+}
+
+.school-list .android-icon {
+    background-position: -45px -14px;
+}
+
+.school-list i.webchat-icon {
+    background-position: -2px -60px;
+}
+
+.school-list i.python-icon {
+    background-position: -2px -2px;
+}
+
+.school-list i.go-icon {
+    background-position: -2px -40px;
+}
+
+.school-list i.ios-icon {
+    background-position: -2px -80px;
+}
+
+
+/*头部导航二级菜单icon设置 End*/
+
+.header .header-login {
+    float: right;
+    text-align: right;
+    width: 200px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.header .header-login span {
+    display: inline-block;
+    width: 17px;
+    height: 60px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.header .header-login .search-icon {
+    background: url(../images/search-icon.png) no-repeat 0 50%;
+    background-size: 17px 17px;
+}
+
+.header .header-login .app-icon {
+    background: url(../images/app-icon.png) no-repeat 0 50%;
+    background-size: 17px 17px;
+}
+
+.header .header-login .login-icon {
+    background: url(../images/login-icon.png) no-repeat 0 50%;
+    background-size: 17px 17px;
+}
+
+
+/*头部导航区域 End*/
+
+
+/*海报、用户登陆、活动区域*/
+
+.page .jk-banner {
+    position: relative;
+    float: left;
+    width: 750px;
+    height: 330px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.page .jk-banner .banner-img {
+    width: 6750px;
+    position: absolute;
+}
+
+.page .jk-banner .banner-img li {
+    float: left;
+}
+
+.page .jk-login {
+    float: left;
+    width: 240px;
+    height: 160px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    box-sizing: border-box;
+    padding: 26px 29px 24px;
+}
+
+
+/*登录、注册按纽鼠标滑过效果*/
+
+.page .jk-login a:hover {
+    background: #35b558;
+    color: #fff;
+    transition: background-color .4s ease-in;
+    -ms-transition: background-color .4s ease-in;
+    -webkit-transition: background-color .4s ease-in;
+    -o-transition: background-color .4s ease-in;
+    -moz-transition: background-color .4s ease-in;
+}
+
+
+/*登录、注册按纽鼠标滑过效果 end*/
+
+.page .jk-login .userImg {
+    width: 57px;
+    height: 57px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.page .jk-login .userInfo span {
+    float: left;
+    font-size: 12px;
+    color: #555;
+    height: 16px;
+    line-height: 16px;
+    width: 108px;
+    margin-top: 8px;
+}
+
+.page .jk-login .userInfo p {
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.page .jk-huodong {
+    width: 239px;
+    height: 160px;
+    margin-top: 10px;
+    float: left;
+    background: url(../images/huodong.png) no-repeat 0 0;
+}
+
+
+/*banner海报区域左、右按纽*/
+
+
+/*.jk-banner .banner-container .banner-arrow-left:hover {
+    background: url(http://s1.jikexueyuan.com/index/images/arrow-hover_5f6b80f.png) no-repeat center;
+    background-size: 50px 80px;
+}*/
+
+.page .jk-banner .banner-arrow {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    float: left;
+    top: 50%;
+    cursor: pointer;
+    margin-top: -40px;
+    background: url(../images/arrow.png) no-repeat 50% 50%;
+    background-size: 50px 80px;
+    z-index: 2;
+}
+
+.page .jk-banner .banner-arrow-left {
+    left: 0;
+}
+
+.page .jk-banner .banner-arrow-right {
+    right: 0;
+    transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+}
+
+
+/*banner海报区域左、右按纽 End*/
+
+
+/*banner海报区域数字导按纽*/
+
+.page .jk-banner .banner-num {
+    font-size: 0px;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: 20px;
+}
+
+.page .jk-banner .banner-num li {
+    /*  float: left;*/
+    display: inline-block;
+    background: #fff;
+    width: 8px;
+    height: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+
+.page .jk-banner .banner-num li.on {
+    height: 20px;
+    background: #35b558;
+}
+
+
+/*banner海报区域数字导按纽 End*/
+
+
+/*用户登陆、活动区域 End*/
+
+.page .jk-login .userInfo-btn {
+    position: relative;
+    float: left;
+    display: inline-block;
+    width: 180px;
+    height: 57px;
+    text-align: center;
+}
+
+.page .jk-login .btn {
+    width: 85px;
+    height: 32px;
+    line-height: 30px;
+    display: inline-block;
+    float: left;
+    margin-top: 20px;
+    border: 1px solid #35b558;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size: 14px;
+    color: #35b558;
+}
+
+.page .jk-login .btnLogin {
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+/*用户登陆、活动区域 End*/
+
+
+/*就业班*/
+
+.page .jk-jiuye {
+    float: left;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+
+.page .jk-jiuye .jk-ban {
+    float: left;
+    width: 327px;
+    height: 70px;
+    line-height: 70px;
+    margin-right: 9px;
+    margin-bottom: 10px;
+    transition: box-shadow .2s linear;
+    -webkit-transition: box-shadow .2s linear;
+    -ms-transition: box-shadow .2s linear;
+    -o-transition: box-shadow .2s linear;
+    -moz-transition: box-shadow .2s linear;
+}
+
+.page .jk-jiuye .jk-ban img {
+    width: 55px;
+    height: 55px;
+    vertical-align: middle;
+    padding-left: 33px;
+}
+
+.page .jk-jiuye .jk-ban:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .4);
+}
+
+.page .jk-jiuye .php {
+    background: url(../images/jiuye-ban01.jpg) no-repeat center center;
+    background-size: 327px 70px;
+}
+
+.page .jk-jiuye .web {
+    background: url(../images/jiuye-ban02.jpg) no-repeat center center;
+    background-size: 327px 70px;
+}
+
+.page .jk-jiuye .ui {
+    background: url(../images/jiuye-ban03.jpg) no-repeat center center;
+    background-size: 327px 70px;
+}
+
+.page .jk-jiuye .android {
+    background: url(../images/jiuye-ban04.jpg) no-repeat center center;
+    background-size: 327px 70px;
+}
+
+.page .jk-jiuye .ios {
+    background: url(../images/jiuye-ban05.jpg) no-repeat center center;
+    background-size: 327px 70px;
+}
+
+.page .jk-jiuye .java {
+    background: url(../images/jiuye-ban06.jpg) no-repeat center center;
+    background-size: 327px 70px;
+}
+
+.page .jk-jiuye .jk-ban p {
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    width: 204px;
+    height: 70px;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.page .jk-jiuye .jk-ban:nth-child(3n) {
+    margin-right: 0;
+}
+
+
+/*就业班 end*/

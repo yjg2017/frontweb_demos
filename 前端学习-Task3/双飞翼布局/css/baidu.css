@@ -1,0 +1,56 @@
+*{
+	margin:0;
+	madding:0;
+}
+html,body{
+	height: 100%;
+}
+.wrapper{
+	min-width: 810px;
+	min-height: 600px;
+	height: 100%;
+	_min-width: 810px;
+}
+.header{
+	height: 60px;
+	width: 100%;
+}
+.header .nav{
+	position: absolute;
+	right: 10px;
+	top:10px;
+}
+.header .nav li{
+   float: left;
+   margin-left: 15px;
+   display: inline-block;
+   line-height: 24px;
+   list-style-type: none;
+
+}
+.header .nav li a{
+   color:#333;
+   font-size: 13px;
+   font-weight: bold;
+}
+.header .nav li a:hover{
+   color:#0000CC;
+}
+#more{
+	width: 100px;
+	text-align: center;
+	cursor: pointer;
+}
+#more ul{
+	display: none;
+	width: 100px;
+}
+#more:hover ul {
+    display: block;
+}
+#more h1{
+	font-size: 13px;
+	color:#fff;
+	text-decoration: underline;
+	background: #3388FF;
+}

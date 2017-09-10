@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    min-width: 810px;
+}
+
+p {
+    text-indent: 22px;
+    line-height: 26px;
+    font-size: 14px;
+    color: #666;
+    padding: 10px;
+    font-family: Verdana, "Lantinghei SC", "Hiragino Sans GB", "Microsoft Yahei", Helvetica, arial, \5b8b\4f53, sans-serif;
+}
+
+h3 {
+    margin: 5px auto 10px 5px;
+}
+
+h4 {
+    margin-left: 15px;
+}
+
+
+/*头部样式*/
+
+header {
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    line-height: 100px;
+    background: #F5F5F5;
+}
+
+
+/*中间主体样式*/
+
+article {
+    overflow: hidden;/*控制左，中，右等高设置*/
+}
+
+article .left {
+    float: left;
+    width: 250px;
+    margin-left: -100%;
+    background: #F5F5F5;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    position: relative;
+    right: 10px;
+}
+
+article .middle {
+    float: left;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+article .right {
+    float: left;
+    width: 200px;
+    margin-left: -200px;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+    background: #F5F5F5;
+    position: relative;
+    left: 10px;
+}
+
+article .inner {
+    margin-left: 250px;
+    margin-right: 200px;
+    background: #F5F5F5;
+    margin-top: -10px;
+    margin-bottom: -9999px;
+    padding-bottom: 9999px;
+}
+
+.content {
+    padding: 10px;
+}
+
+
+/*尾部样式*/
+
+footer {
+    height: 100;
+    width: 100%;
+    background: #FFF;
+}
+
+footer .footer-content {
+    margin-top: 10px;
+    height: 90px;
+    text-align: center;
+    line-height: 90px;
+    background: #F5F5F5;
+}

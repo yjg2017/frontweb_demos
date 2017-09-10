@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>百度一下，你就知道</title>
+    <link rel="stylesheet" href="css/index.css" media="screen and (min-width:769px)" />
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (min-width:147px) and (max-width:768px)" />
+</head>
+
+<body>
+    <!--PC端-->
+    <div class="wrapper">
+        <div class="header">
+            <div class="nav">
+                <a href="#" class="h-nav">糯米</a>
+                <a href="#" class="h-nav">新闻</a>
+                <a href="#" class="h-nav">hao123</a>
+                <a href="#" class="h-nav">地图</a>
+                <a href="#" class="h-nav">视频</a>
+                <a href="#" class="h-nav">贴吧</a>
+                <a href="#" class="lg">登录</a>
+                <a href="#" class="st">设置</a>
+                <a href="#" class="h-more">更多产品</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="s-form">
+                <img src="images/bd_logo1.png" width="270" height="129" class="logo1">
+                <form action="/">
+                    <span class="camera-img"></span>
+                    <input type="text" class="search-ipt" />
+                    <button type="submit" class="search-btn">百度一下</button>
+                </form>
+            </div>
+        </div>
+        <div class="mobile">
+            <img src="images/mobile.png" alt="" />
+            <div class="m-txt">
+                <p>
+                    <b>手机百度</b>
+                </p>
+            </div>
+        </div>
+        <div class="footer">
+            <p class="fl">
+                <a id="setf" href="//www.baidu.com/cache/sethelp/help.html" onmousedown="return ns_c({'fm':'behs','tab':'favorites','pos':0})" target="_blank">把百度设为主页</a>
+                <a onmousedown="return ns_c({'fm':'behs','tab':'tj_about'})" href="http://home.baidu.com">关于百度</a>
+                <a onmousedown="return ns_c({'fm':'behs','tab':'tj_about_en'})" href="http://ir.baidu.com">About&nbsp;&nbsp;Baidu</a>
+                <a onmousedown="return ns_c({'fm':'behs','tab':'tj_tuiguang'})" href="http://e.baidu.com/?refer=888">百度推广</a>
+            </p>
+            <p class="sl">
+                <span>©2017&nbsp;Baidu&nbsp;</span>
+                <a href="http://www.baidu.com/duty/" onmousedown="return ns_c({'fm':'behs','tab':'tj_duty'})">使用百度前必读</a>&nbsp;
+                <a href="http://jianyi.baidu.com/" class="cp-feedback" onmousedown="return ns_c({'fm':'behs','tab':'tj_homefb'})">意见反馈</a> &nbsp;京ICP证030173号&nbsp;
+                <i class="c-icon-icrlogo"></i>&nbsp;
+                <a id="jgwab" target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001">京公网安备11000002000001号</a> &nbsp;
+                <i class="c-icon-jgwablogo"></i>
+            </p>
+        </div>
+    </div>
+    <!--PC端 end-->
+    <!--移动端-->
+    <div id="page" class="m-wrapper">
+        <div class="index-card">
+            <!--Head start-->
+            <div id="header">
+                <!--头部右侧(用户登录)-->
+                <div class="userinfo-wrap">
+                    <div class="login-wraps">
+                        <a href="//m.baidu.com/usrprofile?action=home&model=user&ori=index" id="login" class="icon-login"></a>
+                    </div>
+                </div>
+                <!--头部右侧(用户登录) end-->
+                <!--头部中间logo-->
+                <div id="logo">
+                    <img src="https://m.baidu.com/static/index/plus/plus_logo.png" alt="百度一下,你就知道">
+                </div>
+                <!--头部中间logo end-->
+                <!--搜索框-->
+                <form action="/s" class="se-form" id="index-form">
+                    <div class="con-wrap">
+                        <input type="text" class="se-input" />
+                        <button id="index-btn" class="se-btn" type="submit">百度一下</button>
+                        <!--  <div class="se-inner">
+                            
+                        </div> -->
+                    </div>
+                </form>
+                <!--搜索框 end-->
+                <div class="navs">
+                    <div id="ns-swipe" class="ns-swipe">
+                        <div class="ns-swipe-wrap">
+                            <div class="ns-swipe-item">
+                                <a href="javascript:;" class="ns-item menu-item-0">
+                                    <i class="ns-focus ns-icon"></i>
+                                    <span class="ns-text">关注</span>
+                                </a>
+                                <a href="javascript:;" class="ns-item menu-item-0">
+                                    <i class="ns-news ns-icon"></i>
+                                    <span class="ns-text">新闻</span>
+                                </a>
+                                <a href="javascript:;" class="ns-item menu-item-0">
+                                    <i class="ns-novel ns-icon"></i>
+                                    <span class="ns-text">小说</span>
+                                </a>
+                                <a href="javascript:;" class="ns-item menu-item-0">
+                                    <i class="ns-video ns-icon"></i>
+                                    <span class="ns-text">视频</span>
+                                </a>
+                                <a href="javascript:;" class="ns-item menu-item-0">
+                                    <i class="ns-life ns-icon"></i>
+                                    <span class="ns-text">糯米</span>
+                                </a>
+                                <a href="javascript:;" class="ns-item menu-item-0">
+                                    <i class="ns-map ns-icon"></i>
+                                    <span class="ns-text">地图</span>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="ns-swipe-menu">
+                            <li class="ns-swipe-tab ns-swipe-tab-active"></li>
+                            <li class="ns-swipe-tab ns-swipe-tab-mr0"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--Head end-->
+            <!--内容-->
+            <div class="center-content" id="center-content-1">
+                <div class="tab_news">
+                    <div class="tab-news-content">
+                        <div class="news-list-wrapper">
+                            <div class="rec-item news-item tpl-3">
+                                <a href="http://m.baidu.com/feed/data/landingpage?nid=2313052956470725049&n_type=0&p_from=2" class="inner-item">
+                                    <div class="text-content">
+                                        <h2>江苏省首位70后地级市书记诞生：毕业3年即为正科</h2>
+                                        <span class="hotRec hotRec1"></span>
+                                    </div>
+                                    <div class="pic-content">
+                                        <div class="img-wrap">
+                                            <img src="images/news-img1.JPEG" alt="百度新闻">
+                                        </div>
+                                        <div class="img-wrap">
+                                            <img src="images/news-img2.JPEG" alt="百度新闻">
+                                        </div>
+                                        <div class="img-wrap">
+                                            <img src="images/news-img3.JPEG" alt="百度新闻">
+                                        </div>
+                                    </div>
+                                    <div class="news-from">
+                                        <span class="src-net">中国青年网</span>
+                                        <span class="src-time">02:23</span>
+                                        <span class="src-icon-hot">热点</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Video-->
+                            <div class="rec-item">
+                                <div class="news-item tpl-video tpl-2">
+                                    <div class="inner-item video-small-inner">
+                                        <div class="info-content">
+                                            <div class="text-content">
+                                                <h2>三生三世：团子想念母亲嚎啕大哭 ！</h2>
+                                            </div>
+                                            <div class="news-from">
+                                                <span class="src-net">百度视频</span>
+                                                <span class="src-time">02-12</span>
+                                                <a href="https://m.baidu.com/?action=mdpage&attention=焦点视频&label_type=tag&tag=4&source=wise_feed_vtag" class="sort-name">焦点视频</a><i></i>
+                                            </div>
+                                        </div>
+                                        <div class="pic-content">
+                                            <div class="news-img-padding"></div>
+                                            <img src="images/timg.jpg" alt="百度视频">
+                                            <span class="icon-play"></span>
+                                            <span class="time-length">01:34</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Video end-->
+                            <div class="rec-item news-item tpl-3">
+                                <a href="http://m.baidu.com/feed/data/landingpage?nid=6125405438846540850&n_type=0&p_from=2" class="inner-item">
+                                    <div class="text-content">
+                                        <h2>女司机爱车被压，死里逃生，淡定拍照炫耀看我的汽车</h2>
+                                        <span class="hotRec hotRec1"></span>
+                                    </div>
+                                    <div class="pic-content">
+                                        <div class="img-wrap">
+                                            <img src="images/news-img4.png" alt="百度新闻">
+                                        </div>
+                                        <div class="img-wrap">
+                                            <img src="images/news-img5.png" alt="百度新闻">
+                                        </div>
+                                        <div class="img-wrap">
+                                            <img src="images/news-img6.png" alt="百度新闻">
+                                        </div>
+                                    </div>
+                                    <div class="news-from">
+                                        <span class="src-net">三人童话</span>
+                                        <span class="src-time">07:08</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <!--Video-->
+                            <div class="rec-item">
+                                <div class="news-item tpl-video tpl-2">
+                                    <div class="inner-item video-small-inner">
+                                        <div class="info-content">
+                                            <div class="text-content">
+                                                <h2>美女去做指甲，美甲师拿出一双手套，接下来的场景让她懵了！</h2>
+                                            </div>
+                                            <div class="news-from">
+                                                <span class="src-net">亮铮铮视频</span>
+                                                <span class="src-time">02-09</span>
+                                                <a href="https://m.baidu.com/?action=mdpage&attention=焦点视频&label_type=tag&tag=4&source=wise_feed_vtag" class="sort-name">焦点视频</a><i></i>
+                                            </div>
+                                        </div>
+                                        <div class="pic-content">
+                                            <div class="news-img-padding"></div>
+                                            <img src="images/timg2.jpg" alt="百度视频">
+                                            <span class="icon-play"></span>
+                                            <span class="time-length">01:34</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Video end-->
+                            <div class="rec-item news-item tpl-3">
+                                <a href="http://m.baidu.com/feed/data/landingpage?nid=2313052956470725049&n_type=0&p_from=2" class="inner-item">
+                                    <div class="text-content">
+                                        <h2>10万预算，买标致408还是思域？各有千秋，看完再做决定</h2>
+                                        <span class="hotRec hotRec1"></span>
+                                    </div>
+                                    <div class="pic-content">
+                                        <div class="img-wrap">
+                                            <img src="images/news-img7.JPEG" alt="百度新闻">
+                                        </div>
+                                        <div class="img-wrap">
+                                            <img src="images/news-img8.JPEG" alt="百度新闻">
+                                        </div>
+                                        <div class="img-wrap">
+                                            <img src="images/news-img9.JPEG" alt="百度新闻">
+                                        </div>
+                                    </div>
+                                    <div class="news-from">
+                                        <span class="src-net">车教授</span>
+                                        <span class="src-time">15:58</span>
+                                        <span class="src-icon-hot">推荐</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--内容 end-->
+            <!--底部-->
+            <div class="footer">
+                <div>
+                    <a href="http://ufosdk.baidu.com/?m=Client&a=commonsubmit&appid=517&activityId=1&needEmail=false&bw=F81ADB7CEA232CAF6B2A8537F33D20CE&kw=&tn=iphone&pageid=6">
+                        <i class="icon-feedback"></i> 用户反馈
+                    </a>
+                </div>
+                <a href="https://www.baidu.com/duty/wise/wise_index.html" class="copyright">
+                        使用百度前必读 Baidu 京ICP证030173号
+                    </a>
+                <a href="https://www.baidu.com/duty/wise/wise_index.html" class="recordcode">
+                    <i></i> 京公网安备11000002000001号
+                </a>
+            </div>
+            <!--底部 end-->
+        </div>
+    </div>
+    <!--移动端 end-->
+</body>
+
+</html>

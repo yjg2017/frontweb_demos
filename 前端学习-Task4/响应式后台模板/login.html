@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>后台模板设计</title>
+    <link rel="stylesheet" href="css/bootstrap3/css/bootstrap.min.css">
+    <!--引入自定义样式表-->
+    <link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+
+<body>
+    <!--容器-->
+    <div class="container-fluid">
+        <!--顶部样式-logo图-->
+        <header id="header" class="container-fluid">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="后台登陆模板" />
+                </a>
+            </div>
+        </header>
+        <!--主体登陆框-->
+        <section id="login">
+            <div class="container">
+                <div class="row">
+                    <!--向右偏移4列，占比4列宽度，保证水平居中-->
+                    <div class="col-md-4 col-md-offset-4">
+                        <div class="login-box">
+                            <h2 class="loginInfo"><i class=""></i>用户登录</h2>
+                            <!--验证用户登陆输入-->
+                            <form action="/" role="form">
+                                <!--登陆名-->
+                                <div class="form-group">
+                                    <label for="txtAccount">登录帐户</label>
+                                    <input type="text" class="form-control" placeholder="请输入admin" id="txtAccount" />
+                                </div>
+                                <!--密码-->
+                                <div class="form-group">
+                                    <label for="txtPassword">登录密码</label>
+                                    <input type="password" class="form-control" placeholder="请输入123" id="txtPassword" />
+                                </div>
+                                <div class="divide-20"></div>
+                                <!--勾选保存用户登陆信息-->
+                                <div class="form-group">
+                                    <label for="remenber" id="lbRemenber">
+                                        <input type="checkbox" id="remenber" />&nbsp;记住我</label>
+                                </div>
+                                <!--form提交按纽-->
+                                <div class="form-group">
+                                    <a href="Main.html" class="btn btn-primary" onclick="return checkLogin()">登录极客&nbsp;&raquo;</a>
+                                </div>
+                                <div class="divide-20"></div>
+                                <div class="login-helpers">
+                                    <a href="#">忘记密码?</a>
+                                    <a href="#">注册帐号</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="divide-5"></div>
+        <!--底部,版权部分-->
+        <footer class="col-md-4 col-md-offset-4">
+            <div class="container-fluid">
+                <a href="#">版本所有&copy;2016</a>
+            </div>
+        </footer>
+    </div>
+    <!--引入模拟用户帐号登陆验证-->
+    <script type="text/javascript" src="js/login.js"></script>
+</body>
+
+</html>

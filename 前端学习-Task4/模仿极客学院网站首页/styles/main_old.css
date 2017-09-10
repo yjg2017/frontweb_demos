@@ -1,0 +1,254 @@
+/*头部Logo区域*/
+
+.header {
+    background: #fff;
+    height: 60px;
+    line-height: 60px;
+    border-bottom: 1px solid #ececec;
+}
+
+.header .logo {
+    width: 109px;
+    height: 60px;
+    float: left;
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.header .logo img {
+    width: 109px;
+    margin-top: 10px;
+}
+
+
+/*头部Logo区域 End*/
+
+
+/*头部导航区域*/
+
+.header nav {
+    height: 60px;
+    float: left;
+    display: inline-block;
+}
+
+.header nav li {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    height: 60px;
+    cursor: pointer;
+    margin-right: 50px;
+    float: left;
+}
+
+.header nav .header-nav .active {
+    color: #35b558;
+}
+
+
+/*header nav li i{
+	margin-left: 5px;
+}*/
+
+.header nav li .arrow-icon {
+    margin-bottom: 2px;
+}
+
+.header nav .header-nav .arrow-icon {
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid #c1c1c1;
+    border-left: 1px solid #c1c1c1;
+    display: inline-block;
+    transform: rotate(-135deg);
+    transform-origin: 4px 4px;
+}
+
+.header nav .submenu {
+    position: absolute;
+    z-index: 1000;
+    top: 60px;
+    left: 0;
+    background: #fff;
+    font-size: 12px;
+    color: #666;
+    width: 280px;
+    display: none;
+}
+
+.header .header-login {
+    float: right;
+    text-align: right;
+    width: 200px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.header .header-login span {
+    display: inline-block;
+    width: 17px;
+    height: 60px;
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.header .header-login .search-icon {
+    background: url(../images/search-icon.png) no-repeat 0 50%;
+    background-size: 17px 17px;
+}
+
+.header .header-login .app-icon {
+    background: url(../images/app-icon.png) no-repeat 0 50%;
+    background-size: 17px 17px;
+}
+
+.header .header-login .login-icon {
+    background: url(../images/login-icon.png) no-repeat 0 50%;
+    background-size: 17px 17px;
+}
+
+
+/*头部导航区域 End*/
+
+
+/*海报、用户登陆、活动区域*/
+
+.page .jk-banner {
+    width: 750px;
+    height: 330px;
+    float: left;
+    background: #f5f5f5;
+    margin-right: 10px;
+}
+
+.page .jk-login {
+    float: left;
+    width: 240px;
+    height: 160px;
+    border: 1px solid #e9e9e9;
+    background: #fff;
+    box-sizing: border-box;
+    ;
+    padding: 26px 29px 24px;
+}
+
+.page .jk-login .userImg {
+    width: 57px;
+    height: 57px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.page .jk-login .userInfo span {
+    float: left;
+    font-size: 12px;
+    color: #555;
+    height: 16px;
+    line-height: 16px;
+    width: 108px;
+    margin-top: 8px;
+}
+
+.page .jk-login .userInfo p {
+    float: left;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.page .jk-huodong {
+    width: 239px;
+    height: 160px;
+    margin-top: 10px;
+    float: left;
+    background: url(../images/huodong.png) no-repeat 0 0;
+}
+
+.page .jk-banner {
+    position: relative;
+    width: 750px;
+    height: 330px;
+    overflow: hidden;
+}
+
+.page .jk-banner .banner-img {
+    width: 20000px;
+    position: absolute;
+}
+
+.page .jk-banner .banner-img li {
+    float: left;
+}
+
+
+/*banner海报区域数字导按纽*/
+
+.page .jk-banner .banner-num {
+	font-size: 0px;
+    width: 100%;
+    height: 10px;
+    position: absolute;
+    text-align: center;
+    left: 0;
+    bottom: 20px;
+}
+
+.page .jk-banner .banner-num li {
+    /*	float: left;*/
+    display: inline-block;
+    background: #fff;
+    width: 8px;
+    height: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+.page .jk-banner .banner-num li.on{
+	height: 20px;
+	background: #35b558;
+}
+
+/*banner海报区域数字导按纽 End*/
+.page .jk-banner .btn{
+	width: 30px;
+	height: 50px;
+	background: #000;
+	position: absolute;
+	left: 0;
+	top: 50%;
+} 
+/*banner海报区域左、右按纽*/
+
+/*banner海报区域左、右按纽 End*/
+
+.page .jk-login .userInfo-btn{
+	position: relative;
+	float:left;
+	display: inline-block;
+    width: 180px;
+    height: 57px;
+  	text-align: center;
+}
+.page .jk-login .btn{
+	width: 85px;
+	height: 32px;
+	line-height: 30px;
+	display: inline-block;
+	float: left;
+	margin-top: 20px;
+	border:1px solid #35b558;
+	border-radius: 2px;
+	box-sizing: border-box;
+	font-size: 14px;
+	color: #35b558;
+}
+.page .jk-login .btnLogin{
+	margin-right: 10px;
+	text-align: center;
+}
+.page .jk-login .btnRegister{
+
+}
+/*海报、用户登陆、活动区域 End*/

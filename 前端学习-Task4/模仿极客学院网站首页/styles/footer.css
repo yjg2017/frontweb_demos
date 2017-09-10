@@ -1,0 +1,205 @@
+#footer .jkinfo-block{
+	background: #fff;
+}
+#footer .jkinfo-block .jkinfo{
+	position: relative;
+	/*width: 1000px;
+	margin:0 auto;*/
+	height: 215px;
+	padding-left: 224px;
+	padding-top: 25px;
+	border-bottom: 1px solid #f5f5f5;
+	box-sizing: border-box;
+}
+/*底部logo*/
+#footer .jkinfo-block .jkinfo .jk-logo{
+	position: absolute;
+	top: 25px;
+	left: 0;
+	display: inline-block;
+	width: 160px;
+}
+#footer .jkinfo-block .jkinfo .jk-logo img{
+	width: 109px;
+	height: 40px;
+	display: block;
+}
+#footer .jkinfo-block .jkinfo .jk-logo p{
+	font-size: 12px;
+	color: #999;
+	margin-top: 20px;
+}
+/*底部logo end*/
+
+#footer .jkinfo dl{
+	width: 135px;
+	color:#808080;
+	float: left;
+	line-height: 30px;
+}
+#footer .jkinfo dl dt{
+	font-size: 14px;
+	line-height: 30px;
+	font-weight: 700;
+}
+#footer .jkinfo dl dd a{
+	color: #808080;
+	font-size: 12px;
+	line-height: 30px;
+}
+#footer .jkinfo dl dd a:hover{
+	color: #35b558;
+}
+
+/*app二维码下载*/
+#footer .jk-down{
+	display: inline-block;
+	position: absolute;
+	top: 25px;
+	right: 0;
+	width: 175px;
+	text-align: left;
+
+}
+#footer .jk-down .hot-tel{
+	font-size: 14px;
+	font-weight: 700px;
+	color: #808080;
+	margin-bottom: 20px;
+
+}
+
+#footer .downCon{
+	font-size: 13px;
+	width: 140px;
+	height: 30px;
+	margin-top: 10px;
+	border:1px solid #eee;
+	padding-left: 40px;
+	line-height: 30px;color: #808080;
+	cursor: pointer;
+}
+
+#footer .jk-down .down-ios{
+	background: url(../images/icon-down-ios.png) no-repeat 0 0;
+	background-size: 30px 30px;
+}
+#footer .jk-down .down-android{
+	background: url(../images/icon-down-and.png) no-repeat 0 0;
+	background-size: 30px 30px;
+}
+#footer .jk-down .downCon img{
+	width: 115px;
+	height: 153px;
+	position: absolute;
+	
+	display: none;
+}
+#footer .jk-down .downCon:hover #ios{
+	left: 12px;
+	top: -100px;
+	display: block;
+}
+#footer .jk-down .downCon:hover #android{
+	left: 12px;
+	top: -70px;
+	display: block;
+}
+/*app二维码下载 end*/
+
+/*copyright字体设置*/
+#footer .copyright{
+	color: #999;
+	font-size: 12px;
+	text-align: center;
+	padding:15px 0;
+}
+#footer .copyright a{
+	color: #999;
+}
+#footer .copyright strong{
+	font-weight: 400;
+}
+/*copyright字体设置 end*/
+
+/*copyright右侧的两个小Icon图标*/
+#footer .copyright a.down-wechat{
+	width: 20px;
+	height: 15px;
+	background: url(../images/icon-down-wechat.png) no-repeat 0 0;
+	background-size: 18px 15px;
+	float: right;
+}
+#footer .copyright a.down-sina{
+	width: 20px;
+	height: 15px;
+	background: url(../images/icon-down-sina.png) no-repeat 0 0;
+	background-size: 18px 15px;
+	float: right;
+	margin-right: 10px;
+}
+/*copyright右侧的两个小Icon图标 end*/
+
+
+/*诚信网站Logo*/
+#footer .copyright a.down-cert{
+	background: url(../images/cert.png) no-repeat 0 0;
+	background-size: 60px 21px;
+	width: 60px;
+	height: 22px;
+	margin:0 auto;
+	margin-top: 10px;
+	text-align: center;
+	display: block;
+}
+/*诚信网站Logo end*/
+
+/*gotop*/
+.gotop{
+	position: fixed;
+	left: 50%;
+	bottom: 50px;
+	width: 34px;
+	text-align: center;
+	margin-left: 510px;
+	z-index: 2000;
+}
+.gotop .top{
+	display: block;
+	background: url(../images/gotop.jpg) 0 0 no-repeat;
+	background-size: 34px 103px;
+	width: 34px;
+	height:34px;
+	cursor: pointer;
+}
+.gotop .top:hover{
+	background: url(../images/gotop2.jpg) 0 0 no-repeat;
+	background-size: 34px 103px;
+}
+.gotop .jk-app{
+	position: relative;
+	display: block;
+	background: #f7f7f7 url(../images/phone-1.png) 50% 50% no-repeat;
+	background-size: 12px 24px;
+	width: 34px;
+	height: 35px;
+	border-bottom: 1px solid #e0e0e0;
+}
+.gotop .jk-app:hover{
+	background: #f7f7f7 url(../images/phone-2.png) center center no-repeat;
+	background-size: 12px 24px;
+}
+.gotop .jk-app .appewm{
+	display: none;
+	background: url(../images/appewm.png) center center no-repeat;
+	background-size: 100%;
+	width: 126px;
+	height: 159px;
+	position: absolute;
+	top: -70px;
+	left: -126px;
+	z-index: 2100px;
+}
+.gotop .jk-app:hover .appewm{
+	display: block;
+}

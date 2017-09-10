@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML,CSS面试题</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h2>初级前端工程师面试题</h2>
+        </header>
+        <article class="container">
+            <h1>HTML & CSS</h1>
+            <div class="row-html" id="html">
+                <h2>1. 常用那几种浏览器测试？有哪些内核(Layout Engine)?</h2>
+                <ul>
+                    <li>&nbsp;IE:&nbsp;trident内核</li>
+                    <li>&nbsp;Firefox：gecko内核</li>
+                    <li>&nbsp;Safari:webkit内核</li>
+                    <li>&nbsp;Opera:以前是presto内核，Opera现已改用Google Chrome的Blink内核</li>
+                    <li>&nbsp;Chrome:Blink(基于webkit，Google与Opera Software共同开发)</li>
+                </ul>
+                <h2>2.Doctype是什么？如何触发严格模式与混杂模式模式？区分它们有何意义？</h2>
+                <p class="stitle">Doctype是document type（文档类型）的简写，是用来说明所用的XHTML或HTML是什么版本的。XHTML1.0 提供了三种DTD声明可供选择，分别是：</p>
+                <ul>
+                    <li>
+                        <p>
+                            1、过渡的(Transitional，也叫混杂模式)：要求比较宽松，允许继续使用HTML4.01的标识，完整声明为
+                        </p>
+                        <div class="code">
+                            <pre><span style="color: #0000ff;">&lt;!</span><span style="color: #ff00ff;">DOCTYPE  html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-tranisitional.dtd"</span><span style="color: #0000ff;">&gt;</span></pre>
+                        </div>
+                    </li>
+                    <li>
+                        <p> 2、严格的(Strict)：要求严格的DTD，不能使用任何表现层的标识和属性，完整声明为</p>
+                        <div class="code">
+                            <pre><span style="color: #0000ff;">&lt;!</span><span style="color: #ff00ff;">DOCTYPE  html PUBLIC "-W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"</span><span style="color: #0000ff;">&gt;</span></pre>
+                        </div>
+                    </li>
+                    <li>
+                        <p> 3、框架的(Frameset)：专门针对框架页面设计使用的DTD，如果页面中包含有框架，可以采用DTD，完整声明为</p>
+                        <div class="code">
+                            <pre><span style="color: #0000ff;">&lt;!</span><span style="color: #ff00ff;">DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Frameset//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-frameset.dtd""</span><span style="color: #0000ff;">&gt;</span></pre>
+                        </div>
+                    </li>
+                </ul>
+                <p class="stitle">定义成相应的声明就可以触发相应的模式。 <strong>区分的意义是为了最终能达到数据与表现相分离的目地。</strong></p>
+                <h2>3.行内元素有哪些？块级元素有哪些？ 空(void)元素有那些？</h2>
+                <p>首先：CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，如div的display默认值为“block”，则为“块级”元素；span默认display属性值为“inline”，是“行内”元素。</p>
+                <ul>
+                    <li>
+                        <span>行内元素主要有：&lt;span&gt;、&lt;a&gt;、&lt;b&gt;、<span>&lt;br&gt;、&lt;button&gt;、&lt;strong&gt;、&lt;textarea&gt;、&lt;select&gt;</span></span>
+                    </li>
+                    <li>
+                        块级元素有：&lt;div&gt; 、&lt;ul&gt; 、&lt;ol&gt; 、&lt;li&gt; 、&lt;dl&gt; 、&lt;dt&gt; 、&lt;dd&gt; 、&lt;h1&gt; 、&lt;h2&gt; 、&lt;h3&gt; 、&lt;h4&gt;
+                    </li>
+                    <li>
+                        <p>常见的空元素：</p>
+                        &lt;br&gt; 、&lt;hr&gt; &lt;img&gt; &lt;input&gt; &lt;link&gt; &lt;meta&gt;
+                        <p>鲜为人知的是：</p>
+                        &lt;area&gt; 、&lt;base&gt; 、&lt;col&gt; 、&lt;command&gt; 、&lt;embed&gt; 、&lt;keygen&gt; 、&lt;param&gt; 、&lt;source&gt; 、&lt;track&gt; 、&lt;wbr&gt;
+                    </li>
+                </ul>
+                <h2>4.页面导入样式时，使用link和@import有什么区别？</h2>
+                <ul>
+                    <li>link属于XHTML标签，除了加载css外，还能用于定义RSS，定义rel连接属性等作用；而@import是css提供的,只能用于加载css</li>
+                    <li>页面被加载时，link会同时被载，而@import引用的css会等到页面被加载完再加载</li>
+                    <li>@import是css2.1提出的，只在IE5以上才能被识别，而link是XHTML标签，无兼容问题</li>
+                </ul>
+                <h2>5.语义化的理解？</h2>
+                <ul>
+                    <li>用正确的标签做正确的事情！</li>
+                    <li>html语义化就是让页面的内容结构化，便于对浏览器，搜索引擎解析</li>
+                    <li>在没有css样式的情况下也能以一种文档格式显示，并且容易阅读。</li>
+                    <li>搜索引擎的爬虫依赖于标记来确定上下文和各个关键字的权重，利于SEO</li>
+                    <li>使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解</li>
+                </ul>
+                <h2>6.常见的兼容性问题？</h2>
+                <ul>
+                    <li>png24位的图片在IE6浏览器上出现背景，解决方案做成png8</li>
+                    <li>浏览器默认的margin和padding不同，解决方案是加一个全局的*{margin:0;padding:0}统一。</li>
+                    <li>IE6双边距bug:块属性标签float后，又有横行的margin情况下，在IE6显示margin比设置的大。浮动IE产生的双倍距离#box{float:left;width:10x;margin:0 0 0 100px;}这种情况下 会产生20px的距离，解决方案是在float的标签枝芽控制中加入——_display:inline;将其转化为行内属性。(_这个符号只有IE6才会识别)渐进方式，从总体中逐渐排除局部。首先，巧妙的使用"\9"这一标记，将IE浏览器从所有情况下分离出来。接着，再次使用"+"将IE8和IE7,IE6分离开来，这样IE8已经独立识别。如css:
+                        <br/>
+                        <div class="code">
+                            <pre><span>.sample{</span><br/> <span>&nbsp;&nbsp;background-color:#f1ee18;<span class="zs">/*所有识别*/</span></span><br/><span>&nbsp;&nbsp;.background-color:#00deff\9;<span class="zs">/*IE6、7、8识别*/</span></span><br/><span>&nbsp;&nbsp;+background-color:#a200ff;<span class="zs">/*IE6,IE7识别*/</span></span><br/><span>&nbsp;&nbsp;_background-color:#1e0bd1;<span class="zs">/*IE6识别*/</span></span><br/><span>}</span></pre>
+                        </div>
+                    </li>
+                    <li>IE下，可以使用获取常规属性的方法来获取自定义属性，也可以使用getAttribute()获取自定义属性;Firefox下只能使用getAttribute()获取自定义属性，解决方案：统一使用getAttribute()获取自定义属性</li>
+                    <li>
+                        IE下，event对象有x,y属性，但是没有pageX,pageY属性，Firefox下,event对象有pageX,pageY属性，但没有x,y属性，解决方案：(条件注释)缺点是在IE浏览器下可能会增加额外的HTTP请求次数。
+                    </li>
+                    <!--  <li>
+                        Chrom中文界面下默认会将小于12px的文本强制按照12px显示，可以通过加入CSS属性<span style="color:#ff00ff">-webkit-text-size-adjust:none</span>解决。
+                    </li>
+                    <li>超链接访问过后hover样式就不出现了，被点击访问过的链接样式不在具有hover和active了解决方法是改变CSS属性的排列顺序：L-V-H-A: a:link{} a:visited{} a:hover{} a:active{}</li> -->
+                </ul>
+                <h2>7.html5有哪些新特性、移除了那些元素？如何处理HTML5新标签的浏览器兼容问题？</h2>
+                <ul>
+                    <li>HTML5现在已经不是SGML的子集，主要是关于图像，位置，存储，多任务等功能的增加</li>
+                    <li>
+                        <p>绘画canvas用于媒介回放的vidio和audio元素，本地离线存储localStorage长期存储数据，浏览器关闭后数据不丢失；sessionStorage的数据在浏览器关闭后自动删除；</p>
+                        <p>语义化更好的内容元素如article、footer、header、nav、section、aside;表单控件：calendar、date、time、email、url、search；</p>
+                        <p>新的技术webworker、websocket、Geolocation；</p>
+                        <p>移除的元素:</p>
+                        <p>第一类(表现性元素):basefont、big、center、font、s、strike、tt、u；</p>
+                        <p>第二类(框架类元素)对可用性产生负面影响的元素：frame、frameset、noframes；但html5支持iframe;</p>
+                        <p>第三类(属性类)：align、body标签上的link；vlink；alink；text、bgcolor、height、width、iframe元素上的scrolling、valign......。</p>
+                    </li>
+                    <li>IE8/IE7/IE6支持通过document.createElement方法产生的标签，可利用这一发生特性让这些浏览器支持HTML5新标签，浏览器支持新标签后，还需要添加标签默认的样式</li>
+                    <li>
+                        当然最好的方式是直接使用成熟的框架、使用最多的是html5shim框架
+                        <div class="code">
+                            <pre><span>&lt;!-[if it IE 9]&gt;<br/>&lt;script&nbsp;src="http://html5shim.googlecode.com/svn/trunk/html5.js"&lt;/script&gt;<br/>&lt;![endif]--&gt;</span></pre>
+                        </div>
+                    </li>
+                </ul>
+                <h2>8.如何区分 HTML 和HTML5？</h2>
+                <ul>
+                    <li>
+                        <span>文档类型声明上如:<strong>HTML声明方式</strong></span>
+                        <div class="code">
+                            <pre style="color:#ff00ff">&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;<br/>&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;</pre>
+                        </div>
+                        <span><strong>HTML5声明方式</strong></span>
+                        <div class="code">
+                            <pre style="color:#ff00ff">&lt;!docutype html&gt;</pre>
+                        </div>
+                    </li>
+                    <li>在结构语义上
+                        <p>HTML:没有体现结构语义化的标签，通常是这样来命名的&lt;div id="header"&gt;&lt;/div&gt;这样来表示网站的头部</p>
+                        <p>HTML5:在语义化却有很大优势，提供了一些的新HTML5的标签如：article、footer、header、nav、section这些通俗易懂</p>
+                    </li>
+                </ul>
+                <h2>9.HTML5的离线存储？</h2>
+                <ul>
+                    <li>localStorage &nbsp;&nbsp; 长期存储数据，不会随着浏览器关闭而导致数据丢失</li>
+                    <li>sesstionStorage&nbsp;&nbsp; 数据在浏览器关闭后自动删除</li>
+                </ul>
+                <h2>10.iframe有哪些缺点？</h2>
+                <ul>
+                    <li>iframe会阻塞主页面的Onload事件；</li>
+                    <li>iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。</li>
+                    <li>使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript动态给iframe添加src的属性值，这样可以绕开以上两个缺点问题</li>
+                </ul>
+                <h2>11.HTML5的form如何关闭自动完成功能？</h2>
+                <ul>
+                    <li>给不想要提示的form或下某个input设置autocomplete=off</li>
+                </ul>
+                <h2>12.如何实现浏览器内多个标签页之间的通信？</h2>
+                <ul>
+                    <li>调用localStorage、cookies等本地存储方式</li>
+                </ul>
+                <h2>13.webSocket如何兼容低浏览器？</h2>
+                <ul>
+                    <li>Adobe Flash Socket、ActiveX HTMLFile(IE)、基于multipart编码发送XHR、基于长轮询的XHR</li>
+                </ul>
+                <h2>14.知道的网页制作会用到的图片格式有哪些？</h2>
+                <ul>
+                    <li>
+                        常见的不讲了，这里重要提两个新技术用到的图片Webp和Apng
+                        <div class="code">
+                            <pre><p>WebP格式图片，是由google开发的一种旨在加快图片加载速度的图片格式。图片压缩体积大约只有JPEG的2/3，并能节省大量的服务器带宽资源和数据空间。Facebook Ebay等知名网站已开始测试并使用WebP图片</p><p>Apng：是png的位图动画扩展，可以实现png的动态图片效果。04年诞生，但一直得不到各大浏览器厂商支持，直到日前safari 8的支持，有望代替gif成为下一代动态图标准。</p></pre>
+                        </div>
+                    </li>
+                </ul>
+        <!--     </div>
+            <div class="row-css" id="css"> -->
+                <h2>15.介绍一下CSS的盒子模型?</h2>
+                <p>盒子模型有两种，分别是IE盒子模型和W3C标准盒模型，他们对盒子模型的解释各不相同，先看我们熟悉的标准盒子模型</p>
+                <ul>
+                    <li>标准W3C盒模型： W3C盒子模型的范围包括margin、border、padding、content，并且content部分不包括其他部分
+                    </li>
+                    <li>IE盒子模型：IE盒子模型的范围包括margin、border、padding、content，它和标准W3C盒子模型<strong style="color:#ff00ff">不同的是：</strong>IE盒子模型的content部分包含了border和padding。</li>
+                </ul>
+                <h2>16CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？</h2>
+                <p>选择器有如下：</p>
+                <ul>
+                    <li>id选择器(#myid)</li>
+                    <li>类选择器(.myclass)</li>
+                    <li>标签选择器(div、h1、p)</li>
+                    <li>相邻选择器(h1+p)</li>
+                    <li>子选择器(ul>li)</li>
+                    <li>后代选择器(li a)</li>
+                    <li>通配符选择器( * )</li>
+                    <li>属性选择器(a[rel="external"])</li>
+                    <li>伪类选择器(a:hover、li:nth-child)</li>
+                </ul>
+                <p>样式继承：</p>
+                <ul>
+                    <li>可继承的样式：font-size、font-family、color、UL、LI、DL、DD、DT</li>
+                    <li>不可继承的样式：border、padding、margin、width、height</li>
+                </ul>
+                <p>优先级算法</p>
+                <ul>
+                    <li>优先级就近原则：同权重情况下样式定义最近者为准</li>
+                    <li>转入样式以最后载入的定位为准</li>
+                    <li>
+                        优先级为：
+                        <div class="code">
+                            <pre>!important&nbsp;&gt;&nbsp;id&nbsp;&nbsp;&gt;&nbsp;class&nbsp;&gt;&nbsp;tag<br/>important&nbsp;比&nbsp;内联的优先级高；一般而言，选择器越特殊，它的优先级越高。也就是选择器指向的越准确，优先级越高</pre>
+                        </div>
+                    </li>
+                </ul>
+                <p>CSS3新增伪类举例：</p>
+                <ul>
+                    <li>p:first-of-type：选择属于其父元素的首个&lt;p&gt;元素的第个&lt;p&gt;元素。</li>
+                    <li>p:last-of-type：选择属于其父元素的最后&lt;p&gt;元素的每个&lt;p&gt;元素。</li>
+                    <li>p:only-of-type：选择属于其父元素唯一的&lt;p&gt;元素的每个&lt;p&gt;元素。</li>
+                    <li>p:only-child：选择属于其父元素的唯一子元素的每个&lt;p&gt;元素。</li>
+                    <li>p:nth-child(2)：选择属于其父元素的第二个子元素的每个&lt;p&gt;元素。</li>
+                    <li>:enabled&nbsp;&nbsp;disabled：控制表单控件的禁用状态</li>
+                    <li>:checked：单选框或复选框被选中</li>
+                </ul>
+                <h2>17如何居中div?如何居中一个浮动元素？</h2>
+                <ul>
+                    <li>
+                        给div设置一个宽度，然后添加margin:0 auto;属性类
+                        <div class="code">
+                            <pre>div{<br/>width:200px;<br/>margin:0 auto;<br/>}</pre>
+                        </div>
+                    </li>
+                    <li>居中一个浮动元素：确定窗口的宽度(如width:500px;height:300px;)层，设置层的外边距
+                        <br/>
+                        <div class="code">
+                            <pre>.div{<br/><span style="color:#f0f">&nbsp;&nbsp;&nbsp;width:500px;<br/>&nbsp;&nbsp;&nbsp;height:300px;<br/>&nbsp;&nbsp;&nbsp;margin:-15px 0 0 -250px;<br/>&nbsp;&nbsp;&nbsp;position:relative;<br/>&nbsp;&nbsp;&nbsp;left:50%;<br/>&nbsp;&nbsp;&nbsp;top:50%;<br/></span>} </pre>
+                        </div>
+                    </li>
+                </ul>
+                <h2>18.CSS中可以通过哪些属性定义，使得DOM元素不显示在浏览器可视范围内？</h2>
+                <ul>
+                    <li>常规：设置display属性为none;或设置visbility属性为hidden</li>
+                    <li>技巧：设置宽高为0,再设置透明度为0，再设置z-index位置在-1000</li>
+                </ul>
+                <h2>19..超链接访问过后hover样式就不出现的问题是什么？如何解决？</h2>
+                <ul>
+                    <li>被点击访问过的超链接样式不再具有hover和active了，解决方案是改变css属性的排列顺序：L-V-H-A(link，visited，hover，active)</li>
+                </ul>
+                <h2>20.什么是Css Hack?IE6,7,8的hack分别是什么？</h2>
+                <ul>
+                    <li>针对不同的浏览器写不同的css code的过程就是CSS Hack。</li>
+                    <li>IE6,7,8的hack如下：
+                        <div class="code">
+                            <pre><span>.test{<br/>&nbsp;&nbsp;width:300px;<br/>&nbsp;&nbsp;height:300px;<br/>&nbsp;&nbsp;background-color:blue;<span class="zs">/*firefox*/</span><br/>&nbsp;&nbsp;background-color:red\9 <span class="zs">/*all ie*/</span><br/>&nbsp;&nbsp;background-color:yellow;<span class="zs">/*ie8*/</span><br/>&nbsp;&nbsp;+background-color:pink;<span class="zs">/*ie7*/</span><br/>&nbsp;&nbsp;_background-color:orange;<span class="zs">/*ie6*/</span><br/>}</span></pre>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </article>
+        <footer>
+            <div class="footer-container">
+                &copy 版权所有
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
